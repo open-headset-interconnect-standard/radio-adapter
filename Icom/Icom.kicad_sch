@@ -363,20 +363,20 @@
 				)
 			)
 		)
-		(symbol "Connector_Audio:AudioJack3_Ground_SwitchTR"
+		(symbol "Connector_Audio:AudioJack3_Ground_Switch"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 8.89 0)
+				(at 0 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "AudioJack3_Ground_SwitchTR"
-				(at 0 6.35 0)
+			(property "Value" "AudioJack3_Ground_Switch"
+				(at 0 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -401,7 +401,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve, Switched TR Poles (Normalling)"
+			(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve, Switched Poles (Normalling)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -428,7 +428,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "AudioJack3_Ground_SwitchTR_0_1"
+			(symbol "AudioJack3_Ground_Switch_0_1"
 				(rectangle
 					(start -5.08 -5.08)
 					(end -6.35 -7.62)
@@ -438,6 +438,31 @@
 					)
 					(fill
 						(type outline)
+					)
+				)
+				(rectangle
+					(start 2.54 6.35)
+					(end -5.08 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AudioJack3_Ground_Switch_1_1"
+				(polyline
+					(pts
+						(xy -1.27 4.826) (xy -1.016 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(polyline
@@ -502,6 +527,18 @@
 				)
 				(polyline
 					(pts
+						(xy 2.54 2.54) (xy -1.27 2.54) (xy -1.27 4.826) (xy -1.524 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy -1.905 -5.08) (xy -1.27 -5.715) (xy -0.635 -5.08) (xy -0.635 0) (xy 2.54 0)
 					)
 					(stroke
@@ -514,7 +551,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -5.08) (xy -3.175 -5.715) (xy -3.81 -5.08)
+						(xy 2.54 5.08) (xy -2.54 5.08) (xy -2.54 -5.08) (xy -3.175 -5.715) (xy -3.81 -5.08)
 					)
 					(stroke
 						(width 0.254)
@@ -524,19 +561,6 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start 2.54 3.81)
-					(end -5.08 -10.16)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AudioJack3_Ground_SwitchTR_1_1"
 				(pin passive line
 					(at 0 -12.7 90)
 					(length 2.54)
@@ -592,7 +616,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at 5.08 5.08 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -602,6 +626,24 @@
 						)
 					)
 					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1935,6 +1977,26 @@
 		)
 		(uuid "0fd69831-b624-48c9-a213-f4fecb4dea22")
 	)
+	(text "Not used by OHIS, but\nof interest to the user."
+		(exclude_from_sim no)
+		(at 162.052 90.424 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1d91772e-48d5-42d5-bc96-98a7b6ce513a")
+	)
+	(text "Overrides AF Out from Mic connector."
+		(exclude_from_sim no)
+		(at 113.03 106.934 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "78d1ef59-ee5b-4a5d-ade1-0c5577979f65")
+	)
 	(text "Note: Some radios put serial data on Pin 3."
 		(exclude_from_sim no)
 		(at 120.904 52.324 0)
@@ -1944,6 +2006,16 @@
 			)
 		)
 		(uuid "a191cff2-dc1b-4ace-8d3e-2b47aa815c0a")
+	)
+	(text "Tie all \"Shield\"s to metalic case.\nDO NOT TIE TO GROUND!"
+		(exclude_from_sim no)
+		(at 179.324 68.834 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d494746f-cd2a-411f-9bc2-e16b1ac18573")
 	)
 	(text "Optional. Do not connect otherwise."
 		(exclude_from_sim no)
@@ -2017,6 +2089,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{SQL Open}"
+		(shape input)
+		(at 156.21 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0c543958-2fcb-4253-a965-91fa98ebffba")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 168.448 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2241,6 +2335,28 @@
 			)
 		)
 	)
+	(global_label "Freq Up{slash}Down"
+		(shape input)
+		(at 156.21 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7409c963-c8bd-416f-861f-46991a64755c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.9837 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "AF Out"
 		(shape input)
 		(at 91.44 118.11 0)
@@ -2259,28 +2375,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Buttons"
-		(shape input)
-		(at 73.66 88.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7ba9acc6-4356-44b5-aa29-74327d5dc790")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.4783 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -2329,7 +2423,7 @@
 			)
 		)
 	)
-	(global_label "Power Gnd"
+	(global_label "HP Gnd"
 		(shape input)
 		(at 161.29 45.72 180)
 		(fields_autoplaced yes)
@@ -2341,7 +2435,7 @@
 		)
 		(uuid "994cddb7-463b-4e32-a5f0-8351715984ca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.1449 45.72 0)
+			(at 151.1687 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2483,6 +2577,28 @@
 			)
 		)
 	)
+	(global_label "Freq Up{slash}Down"
+		(shape input)
+		(at 73.66 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c3bfee34-8eee-4dee-aee2-7df84e65a581")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 56.8863 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "HP Left"
 		(shape input)
 		(at 91.44 120.65 0)
@@ -2549,7 +2665,7 @@
 			)
 		)
 	)
-	(global_label "Buttons"
+	(global_label "Freq Up{slash}Down"
 		(shape input)
 		(at 90.17 54.61 0)
 		(fields_autoplaced yes)
@@ -2561,7 +2677,7 @@
 		)
 		(uuid "de47baae-ac0e-4125-a688-6302a42750bc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 100.3517 54.61 0)
+			(at 106.9437 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2593,6 +2709,28 @@
 			)
 		)
 	)
+	(global_label "HP Gnd"
+		(shape input)
+		(at 91.44 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ed7ddd7a-eafc-4fe8-8e04-95f8e2791792")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.5613 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Mic Gnd"
 		(shape input)
 		(at 88.9 83.82 0)
@@ -2612,86 +2750,6 @@
 				)
 				(justify left)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:AudioJack3_Ground_SwitchTR")
-		(at 86.36 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "11cbb960-733e-4ad0-b214-95dbd57e177b")
-		(property "Reference" "J4"
-			(at 84.455 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Headphone In"
-			(at 84.455 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve, Switched TR Poles (Normalling)"
-			(at 86.36 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "RN"
-			(uuid "017d2fe4-2e9e-43d7-9718-2cd26c95de8c")
-		)
-		(pin "TN"
-			(uuid "2d4ac7cd-e5e1-4ae7-9b19-446b80448402")
-		)
-		(pin "S"
-			(uuid "06d24a6c-f1d2-426a-be70-3172799eb18f")
-		)
-		(pin "R"
-			(uuid "2a8e22a4-1c68-4de2-bd12-18eac2a3d941")
-		)
-		(pin "G"
-			(uuid "56d929a0-d902-48ca-93bb-af23b2ce5cae")
-		)
-		(pin "T"
-			(uuid "7cc1e2ae-98f1-4510-b6b3-1cdfea65d1ae")
-		)
-		(instances
-			(project "Icom"
-				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
-					(reference "J4")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -2996,12 +3054,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 86.36 133.35 0)
+		(property "Value" "Shield"
+			(at 88.9 129.5399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3044,6 +3103,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Audio:AudioJack3_Ground_Switch")
+		(at 86.36 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7447550a-7901-4e9b-bd51-86b0c36257d4")
+		(property "Reference" "J4"
+			(at 84.455 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Headphone In"
+			(at 84.455 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve, Switched Poles (Normalling)"
+			(at 86.36 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "TN"
+			(uuid "1f8d8f66-c362-4355-ab36-1dbfc189b629")
+		)
+		(pin "RN"
+			(uuid "8c6be1ef-d9d8-4ea5-ba5b-bd72f20215a8")
+		)
+		(pin "T"
+			(uuid "72aca595-76fa-4087-94e8-650467bee2ff")
+		)
+		(pin "S"
+			(uuid "c7cdf6fe-9e41-428c-9d61-61d5264c2822")
+		)
+		(pin "SN"
+			(uuid "4dfd80ab-3c38-4e07-860a-ca010d9e8ebf")
+		)
+		(pin "G"
+			(uuid "32d79868-0117-4bde-bc8b-e19f15dc13db")
+		)
+		(pin "R"
+			(uuid "7046d822-aa85-4a01-a93e-9484daccba39")
+		)
+		(instances
+			(project "Icom"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:Earth")
 		(at 86.36 93.98 0)
 		(unit 1)
@@ -3062,12 +3204,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 86.36 99.06 0)
+		(property "Value" "Shield"
+			(at 88.9 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3128,12 +3271,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 180.34 66.04 0)
+		(property "Value" "Shield"
+			(at 182.88 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3261,12 +3405,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 80.01 67.31 0)
+		(property "Value" "Shield"
+			(at 82.55 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
