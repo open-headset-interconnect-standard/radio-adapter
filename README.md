@@ -31,4 +31,3 @@ As of 2024-04-04, I (@SmittyHalibut, Mark Smith, N6MTS) have submitted three sch
 * As of 2024-04-04, I've only done the schematics, and even then it's little more than throwing notes down "on paper."  I tried to cover:
     * Connector pinouts (see above).
     * Any electrical circuits required (mostly converting from OHIS's electret level to dynamic level for radios that want dynamic.)
-
