@@ -2566,7 +2566,7 @@
 		)
 	)
 	(junction
-		(at 110.49 153.67)
+		(at 107.95 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "300d4f5c-5479-4957-a7af-135c64fecc0e")
@@ -2597,7 +2597,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 113.03) (xy 91.44 113.03)
+			(xy 104.14 143.51) (xy 88.9 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2607,7 +2607,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 123.19) (xy 91.44 123.19)
+			(xy 116.84 153.67) (xy 88.9 153.67)
 		)
 		(stroke
 			(width 0)
@@ -2627,7 +2627,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 105.41) (xy 168.91 105.41)
+			(xy 92.71 115.57) (xy 110.49 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2637,7 +2637,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 148.59) (xy 119.38 123.19)
+			(xy 116.84 179.07) (xy 116.84 153.67)
 		)
 		(stroke
 			(width 0)
@@ -2677,7 +2677,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 143.51) (xy 106.68 143.51)
+			(xy 88.9 173.99) (xy 104.14 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2687,7 +2687,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 143.51) (xy 106.68 113.03)
+			(xy 104.14 173.99) (xy 104.14 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2697,7 +2697,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 153.67) (xy 119.38 153.67)
+			(xy 107.95 184.15) (xy 116.84 184.15)
 		)
 		(stroke
 			(width 0)
@@ -2707,7 +2707,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 148.59) (xy 110.49 118.11)
+			(xy 107.95 179.07) (xy 107.95 148.59)
 		)
 		(stroke
 			(width 0)
@@ -2717,7 +2717,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 153.67) (xy 110.49 153.67)
+			(xy 88.9 184.15) (xy 107.95 184.15)
 		)
 		(stroke
 			(width 0)
@@ -2757,7 +2757,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 118.11) (xy 91.44 118.11)
+			(xy 107.95 148.59) (xy 88.9 148.59)
 		)
 		(stroke
 			(width 0)
@@ -2816,6 +2816,16 @@
 			)
 		)
 		(uuid "4836be19-8f4d-4e70-9dc8-99f388fda347")
+	)
+	(text "Tie all \"Shield\"s to metalic case.\nDO NOT TIE TO GROUND!"
+		(exclude_from_sim no)
+		(at 228.6 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8d7788ae-7efd-484c-a55e-8905a04ef1a4")
 	)
 	(text "Unused by OHIS, but\nof interest to the user."
 		(exclude_from_sim no)
@@ -2937,7 +2947,7 @@
 	)
 	(global_label "~{Down Button}"
 		(shape input)
-		(at 73.66 88.9 180)
+		(at 74.93 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2947,7 +2957,7 @@
 		)
 		(uuid "1694a2c1-e19e-4910-9881-84d1ed0526cd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.6403 88.9 0)
+			(at 59.9103 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2981,7 +2991,7 @@
 	)
 	(global_label "~{SW2}"
 		(shape input)
-		(at 151.13 97.79 0)
+		(at 92.71 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2991,7 +3001,7 @@
 		)
 		(uuid "2589c151-c6cc-4078-af35-0d66a58f3fc5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.9856 97.79 0)
+			(at 99.5656 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3003,7 +3013,7 @@
 	)
 	(global_label "HP Gnd"
 		(shape input)
-		(at 91.44 110.49 0)
+		(at 88.9 140.97 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3013,7 +3023,7 @@
 		)
 		(uuid "2c89fb4b-eea7-4ad3-87b2-5f9adce09fa0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.5613 110.49 0)
+			(at 99.0213 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3157,7 +3167,7 @@
 	)
 	(global_label "Mic Gnd"
 		(shape input)
-		(at 168.91 105.41 0)
+		(at 110.49 115.57 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3167,7 +3177,7 @@
 		)
 		(uuid "50022107-6e08-460b-a2a3-346b1f4c264a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 179.5756 105.41 0)
+			(at 121.1556 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3201,7 +3211,7 @@
 	)
 	(global_label "Mic+"
 		(shape input)
-		(at 81.28 78.74 0)
+		(at 82.55 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3211,7 +3221,7 @@
 		)
 		(uuid "5b223161-97df-4833-ba9d-63cc1020da93")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.9824 78.74 0)
+			(at 90.2524 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3223,7 +3233,7 @@
 	)
 	(global_label "~{PTT}"
 		(shape input)
-		(at 151.13 110.49 0)
+		(at 92.71 120.65 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3233,7 +3243,7 @@
 		)
 		(uuid "5c31d267-3110-4a31-b431-849f16c5430e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.3204 110.49 0)
+			(at 98.9004 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3245,7 +3255,7 @@
 	)
 	(global_label "~{PTT}"
 		(shape input)
-		(at 88.9 86.36 0)
+		(at 90.17 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3255,7 +3265,7 @@
 		)
 		(uuid "5ffeb116-1cc3-4ed2-87d3-bffb300661d1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.0904 86.36 0)
+			(at 96.3604 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3267,7 +3277,7 @@
 	)
 	(global_label "+5v 10mA"
 		(shape input)
-		(at 151.13 102.87 0)
+		(at 92.71 113.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3277,7 +3287,7 @@
 		)
 		(uuid "6475f417-b257-4dbe-97c6-eb3ad178cc7f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.0332 102.87 0)
+			(at 105.6132 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3333,7 +3343,7 @@
 	)
 	(global_label "~{Up Button}"
 		(shape input)
-		(at 73.66 83.82 180)
+		(at 74.93 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3343,7 +3353,7 @@
 		)
 		(uuid "7ba9acc6-4356-44b5-aa29-74327d5dc790")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 61.0593 83.82 0)
+			(at 62.3293 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3399,7 +3409,7 @@
 	)
 	(global_label "+5v 10mA"
 		(shape input)
-		(at 73.66 86.36 180)
+		(at 74.93 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3409,7 +3419,7 @@
 		)
 		(uuid "9345f079-304d-415c-9db0-cb640df84914")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 60.7568 86.36 0)
+			(at 62.0268 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3421,7 +3431,7 @@
 	)
 	(global_label "~{Fast Button}"
 		(shape input)
-		(at 81.28 93.98 180)
+		(at 82.55 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3431,7 +3441,7 @@
 		)
 		(uuid "976e5ab8-9db2-463a-9ee5-3f5cd357a404")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.1674 93.98 0)
+			(at 68.4374 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3531,7 +3541,7 @@
 	)
 	(global_label "Power Gnd"
 		(shape input)
-		(at 88.9 88.9 0)
+		(at 90.17 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3541,7 +3551,7 @@
 		)
 		(uuid "aa019e50-bf44-4c40-a5ba-f8a0612148d8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.0451 88.9 0)
+			(at 103.3151 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3553,7 +3563,7 @@
 	)
 	(global_label "~{SW1}"
 		(shape input)
-		(at 151.13 100.33 0)
+		(at 92.71 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3563,7 +3573,7 @@
 		)
 		(uuid "b0fe9277-eb80-4440-abf0-69248d7ee635")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.9856 100.33 0)
+			(at 99.5656 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3575,7 +3585,7 @@
 	)
 	(global_label "Mic+"
 		(shape input)
-		(at 151.13 107.95 0)
+		(at 92.71 118.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3585,7 +3595,7 @@
 		)
 		(uuid "b779719e-9802-45e0-b647-dc2d380524e2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 158.8324 107.95 0)
+			(at 100.4124 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3641,7 +3651,7 @@
 	)
 	(global_label "Power Gnd"
 		(shape input)
-		(at 168.91 97.79 0)
+		(at 110.49 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3651,7 +3661,7 @@
 		)
 		(uuid "c643f225-b723-49ca-bcb5-68be9ae6436a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 182.0551 97.79 0)
+			(at 123.6351 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3663,7 +3673,7 @@
 	)
 	(global_label "HP Left"
 		(shape input)
-		(at 91.44 120.65 0)
+		(at 88.9 151.13 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3673,7 +3683,7 @@
 		)
 		(uuid "cc0e90f1-ed28-4f5e-9485-388396d11d8e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.5614 120.65 0)
+			(at 99.0214 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3751,7 +3761,7 @@
 	)
 	(global_label "HP Right"
 		(shape input)
-		(at 91.44 115.57 0)
+		(at 88.9 146.05 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3761,7 +3771,7 @@
 		)
 		(uuid "ea356c7a-003c-461f-abfa-4022a5d66b2d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.8918 115.57 0)
+			(at 100.3518 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3773,7 +3783,7 @@
 	)
 	(global_label "Mic Gnd"
 		(shape input)
-		(at 88.9 83.82 0)
+		(at 90.17 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3783,7 +3793,7 @@
 		)
 		(uuid "f543e73c-a392-440a-a97d-ed9304e18347")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.5656 83.82 0)
+			(at 100.8356 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3816,33 +3826,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack3_Ground_Switch")
-		(at 86.36 148.59 0)
+		(lib_id "power:Earth")
+		(at 83.82 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "204f6eb3-beff-4fd9-8abc-a5caf30cd8e9")
-		(property "Reference" "J5"
-			(at 84.455 137.16 0)
+		(uuid "09e17984-9fe2-42d9-a44d-4e6ae8036640")
+		(property "Reference" "#PWR03"
+			(at 83.82 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "Speaker In"
-			(at 84.455 139.7 0)
+		(property "Value" "Shield"
+			(at 86.36 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 148.59 0)
+			(at 83.82 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3851,7 +3863,139 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 148.59 0)
+			(at 83.82 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 83.82 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e12490e-04be-4e88-a848-19a18279c7de")
+		)
+		(instances
+			(project "Yaesu"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 87.63 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11d9ec26-a1fb-4725-b1a4-60d162dbaa9e")
+		(property "Reference" "#PWR01"
+			(at 87.63 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Shield"
+			(at 90.17 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 87.63 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0b65d91-4c51-4b63-b656-1cd79fa2a67d")
+		)
+		(instances
+			(project "Yaesu"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack3_Ground_Switch")
+		(at 83.82 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "204f6eb3-beff-4fd9-8abc-a5caf30cd8e9")
+		(property "Reference" "J5"
+			(at 81.915 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Speaker In"
+			(at 81.915 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3860,7 +4004,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve, Switched Poles (Normalling)"
-			(at 86.36 148.59 0)
+			(at 83.82 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3890,7 +4034,7 @@
 			(uuid "f42b2904-28ec-423c-b471-cc607064c4a2")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "J5")
 					(unit 1)
@@ -3979,7 +4123,7 @@
 			(uuid "283a7b2c-67cb-4b9b-b27b-30c10bc570f0")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "J2")
 					(unit 1)
@@ -3989,7 +4133,7 @@
 	)
 	(symbol
 		(lib_id "OHIS:Conn_GX16-8p")
-		(at 81.28 86.36 0)
+		(at 82.55 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3997,7 +4141,7 @@
 		(dnp no)
 		(uuid "2e3f4b15-d53e-4fb6-bb69-477ffb118691")
 		(property "Reference" "J3"
-			(at 79.248 73.66 0)
+			(at 80.518 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4006,7 +4150,7 @@
 			)
 		)
 		(property "Value" "Yaesu HF GX16-8P Mic"
-			(at 83.312 73.406 0)
+			(at 84.582 69.596 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4015,7 +4159,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 86.36 0)
+			(at 82.55 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4024,7 +4168,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 86.36 0)
+			(at 82.55 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4033,7 +4177,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 81.28 86.36 0)
+			(at 82.55 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4069,7 +4213,7 @@
 			(uuid "eb7a6e11-f0f5-49a0-94c3-5972ecea1b8c")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "J3")
 					(unit 1)
@@ -4079,7 +4223,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 168.91 101.6 90)
+		(at 110.49 111.76 90)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4088,7 +4232,7 @@
 		(fields_autoplaced yes)
 		(uuid "3740370e-7626-4975-bb8b-fe34275a6726")
 		(property "Reference" "JP1"
-			(at 171.45 100.3299 90)
+			(at 113.03 110.4899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4097,7 +4241,7 @@
 			)
 		)
 		(property "Value" "Only bridge grounds if using Mobile Mic input"
-			(at 171.45 102.8699 90)
+			(at 113.03 113.0299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4106,7 +4250,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 101.6 0)
+			(at 110.49 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4115,7 +4259,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 168.91 101.6 0)
+			(at 110.49 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4124,7 +4268,7 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 168.91 101.6 0)
+			(at 110.49 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4139,7 +4283,7 @@
 			(uuid "29004e1c-e0d6-40c8-9c9a-7c45d248a1b6")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "JP1")
 					(unit 1)
@@ -4149,7 +4293,7 @@
 	)
 	(symbol
 		(lib_id "Connector:6P6C_Shielded")
-		(at 140.97 105.41 0)
+		(at 82.55 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4158,7 +4302,7 @@
 		(fields_autoplaced yes)
 		(uuid "3ad67760-dbdc-4e96-a81c-2734c57b888f")
 		(property "Reference" "J6"
-			(at 140.97 90.17 0)
+			(at 82.55 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4166,7 +4310,7 @@
 			)
 		)
 		(property "Value" "Yaesu Mobile Mic In"
-			(at 140.97 92.71 0)
+			(at 82.55 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4174,7 +4318,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 104.775 90)
+			(at 82.55 114.935 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4183,7 +4327,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 104.775 90)
+			(at 82.55 114.935 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4192,7 +4336,7 @@
 			)
 		)
 		(property "Description" "RJ connector, 6P6C (6 positions 6 connected), RJ12/RJ18/RJ25, Shielded"
-			(at 140.97 105.41 0)
+			(at 82.55 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4222,7 +4366,7 @@
 			(uuid "4e0d3568-4ace-45ef-9fe1-43605a6eb9da")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "J6")
 					(unit 1)
@@ -4324,7 +4468,7 @@
 			(uuid "4e7be54c-f447-4732-a4c9-3c0d8c2c0565")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "J1")
 					(unit 1)
@@ -4333,26 +4477,26 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 110.49 151.13 0)
+		(lib_id "power:Earth")
+		(at 83.82 191.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "60d02dc9-23c6-4b37-987f-31422a9db5a2")
-		(property "Reference" "R5"
-			(at 113.03 149.8599 0)
+		(uuid "5c229d73-4c7f-44d9-93e6-77c833c0d10f")
+		(property "Reference" "#PWR04"
+			(at 83.82 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "100R"
-			(at 113.03 152.3999 0)
+		(property "Value" "Shield"
+			(at 86.36 193.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4361,7 +4505,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 151.13 0)
+			(at 83.82 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4370,7 +4514,74 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 110.49 151.13 0)
+			(at 83.82 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 83.82 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e19b2e59-79dd-47c1-9738-ecac8685fd2d")
+		)
+		(instances
+			(project "Yaesu"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 107.95 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60d02dc9-23c6-4b37-987f-31422a9db5a2")
+		(property "Reference" "R5"
+			(at 110.49 180.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100R"
+			(at 110.49 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4379,7 +4590,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 110.49 151.13 0)
+			(at 107.95 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4394,7 +4605,7 @@
 			(uuid "ec043c9d-1ee4-40c3-a7a0-d262b8722ee6")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "R5")
 					(unit 1)
@@ -4464,7 +4675,7 @@
 			(uuid "70bb512e-ed87-4313-be57-227729fe20c1")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "R3")
 					(unit 1)
@@ -4534,75 +4745,9 @@
 			(uuid "287edcb9-d21c-4e61-9195-6e0854aaadae")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 86.36 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "68deba52-eb52-40f2-bc06-361d4b0dec37")
-		(property "Reference" "#PWR04"
-			(at 86.36 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 86.36 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f4cd6af0-b516-424c-bdb3-58d623b2b789")
-		)
-		(instances
-			(project "Yaesu-HF"
-				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -4670,7 +4815,7 @@
 			(uuid "45f55a3d-4574-46cf-80a8-815cc68fac83")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "R4")
 					(unit 1)
@@ -4680,7 +4825,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack3_Ground_Switch")
-		(at 86.36 115.57 0)
+		(at 83.82 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4689,7 +4834,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a877749-7a93-442b-ab4e-22f44f06c5dc")
 		(property "Reference" "J4"
-			(at 84.455 104.14 0)
+			(at 81.915 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4697,7 +4842,7 @@
 			)
 		)
 		(property "Value" "Headphone In"
-			(at 84.455 106.68 0)
+			(at 81.915 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4705,7 +4850,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 115.57 0)
+			(at 83.82 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4714,7 +4859,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 115.57 0)
+			(at 83.82 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4723,7 +4868,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve, Switched Poles (Normalling)"
-			(at 86.36 115.57 0)
+			(at 83.82 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4753,7 +4898,7 @@
 			(uuid "641a2d58-77f0-4734-bd07-e196239dbb5d")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "J4")
 					(unit 1)
@@ -4821,7 +4966,7 @@
 			(uuid "17b18e69-0886-4856-b0e7-63c4bee9f367")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "C1")
 					(unit 1)
@@ -4831,16 +4976,16 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 86.36 93.98 0)
+		(at 82.55 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bfe2b462-7d6a-47c1-be52-af8a6e3da6d8")
-		(property "Reference" "#PWR03"
-			(at 86.36 100.33 0)
+		(uuid "c4e4960a-595a-43a4-a12e-0f6d4fc2be98")
+		(property "Reference" "#PWR05"
+			(at 82.55 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4848,16 +4993,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 86.36 99.06 0)
+		(property "Value" "Shield"
+			(at 85.09 126.9999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 93.98 0)
+			(at 82.55 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4866,7 +5012,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 93.98 0)
+			(at 82.55 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4875,7 +5021,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 86.36 93.98 0)
+			(at 82.55 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4884,12 +5030,79 @@
 			)
 		)
 		(pin "1"
-			(uuid "68ddd61d-fa40-4f34-b2bd-ebfdb591e228")
+			(uuid "c846f256-561e-4bbf-9e90-366b755f931c")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
-					(reference "#PWR03")
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 80.01 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2c30218-277b-4539-a122-1e5b78369af3")
+		(property "Reference" "#PWR07"
+			(at 80.01 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Shield"
+			(at 82.55 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 80.01 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e8b2c53-7d8a-4835-afcf-3e563e02968d")
+		)
+		(instances
+			(project "Yaesu"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4914,12 +5127,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 231.14 67.31 0)
+		(property "Value" "Shield"
+			(at 233.68 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4953,7 +5167,7 @@
 			(uuid "d16c636b-40aa-4010-bccc-dfd3649e665b")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "#PWR02")
 					(unit 1)
@@ -4963,7 +5177,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 119.38 151.13 0)
+		(at 116.84 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4972,7 +5186,7 @@
 		(fields_autoplaced yes)
 		(uuid "f12710be-cfc7-4ee1-9979-d9cd0f6d9785")
 		(property "Reference" "R6"
-			(at 121.92 149.8599 0)
+			(at 119.38 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4981,7 +5195,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 121.92 152.3999 0)
+			(at 119.38 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4990,7 +5204,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 151.13 0)
+			(at 116.84 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4999,7 +5213,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 151.13 0)
+			(at 116.84 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5008,7 +5222,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 119.38 151.13 0)
+			(at 116.84 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5023,75 +5237,9 @@
 			(uuid "3eadf5ec-37f8-4d4b-bb22-7faaad27c4f9")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 140.97 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f211c072-11fb-46bc-b29b-e7586ff17854")
-		(property "Reference" "#PWR06"
-			(at 140.97 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 140.97 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 140.97 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "57f112fe-e873-4b81-b100-5d228a3c2147")
-		)
-		(instances
-			(project "Yaesu-HF"
-				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
-					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5157,7 +5305,7 @@
 			(uuid "6c3c704a-aac1-4309-8e00-0135bdf9fee6")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "C2")
 					(unit 1)
@@ -5224,141 +5372,9 @@
 			(uuid "8f7c27fb-05b0-4cc3-91b6-8f5f103cd37b")
 		)
 		(instances
-			(project "Yaesu-HF"
+			(project "Yaesu"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 86.36 161.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd795d53-663c-4682-9143-9d138b8949f9")
-		(property "Reference" "#PWR05"
-			(at 86.36 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 86.36 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 86.36 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c61519c9-3f06-47e8-984e-81a1928589a4")
-		)
-		(instances
-			(project "Yaesu-HF"
-				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 80.01 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ffe412fb-37d8-481f-8347-277508db6aa7")
-		(property "Reference" "#PWR01"
-			(at 80.01 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 80.01 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 80.01 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 80.01 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "11df18f6-a715-417c-b027-0683eb6ae568")
-		)
-		(instances
-			(project "Yaesu-HF"
-				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
