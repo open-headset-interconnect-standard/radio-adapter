@@ -1110,6 +1110,108 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "OHIS:Conn_GX16-8p"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2757,6 +2859,18 @@
 		(uuid "8db5b9de-83a4-492e-be4c-699f309aac7c")
 	)
 	(junction
+		(at 68.58 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba1198e5-ced4-46dd-b56d-86b66a517ab7")
+	)
+	(junction
+		(at 118.11 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bff78118-84de-4869-9098-344a0510aa97")
+	)
+	(junction
 		(at 104.14 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2816,6 +2930,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 151.13) (xy 118.11 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c172ee4-3d3d-44fd-9bfc-92bc584cad1e")
+	)
+	(wire
+		(pts
 			(xy 93.98 123.19) (xy 91.44 123.19)
 		)
 		(stroke
@@ -2823,6 +2947,16 @@
 			(type default)
 		)
 		(uuid "2a701a38-5c52-4851-9cd2-d5f6aaf2f44d")
+	)
+	(wire
+		(pts
+			(xy 68.58 41.91) (xy 69.85 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b4b7682-50c7-404a-b78f-a01b173667d7")
 	)
 	(wire
 		(pts
@@ -2846,6 +2980,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 151.13) (xy 104.14 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "557a1fb2-bc18-4ca5-be99-15347d3a609f")
+	)
+	(wire
+		(pts
 			(xy 115.57 151.13) (xy 118.11 151.13)
 		)
 		(stroke
@@ -2866,6 +3010,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 151.13) (xy 99.06 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "815a40dd-30f7-4b3c-b934-2b00215bdf13")
+	)
+	(wire
+		(pts
 			(xy 113.03 151.13) (xy 115.57 151.13)
 		)
 		(stroke
@@ -2876,6 +3030,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 41.91) (xy 68.58 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "953de891-8fef-43a3-9606-7017daf6ce71")
+	)
+	(wire
+		(pts
 			(xy 113.03 120.65) (xy 113.03 137.16)
 		)
 		(stroke
@@ -2883,6 +3047,16 @@
 			(type default)
 		)
 		(uuid "95570068-cc20-4479-911c-365ae4dd5e76")
+	)
+	(wire
+		(pts
+			(xy 63.5 41.91) (xy 63.5 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d145aa53-8c87-4153-bc27-c3c48d4ed6ba")
 	)
 	(wire
 		(pts
@@ -2906,6 +3080,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 151.13) (xy 123.19 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df6a08aa-ad81-4240-8163-bf0585f37ffa")
+	)
+	(wire
+		(pts
 			(xy 104.14 151.13) (xy 104.14 137.16)
 		)
 		(stroke
@@ -2915,8 +3099,8 @@
 		(uuid "febd69be-5449-4deb-bdde-cbcf9fe45cae")
 	)
 	(rectangle
-		(start 48.26 49.53)
-		(end 69.85 34.925)
+		(start 50.165 34.925)
+		(end 71.755 49.53)
 		(stroke
 			(width 0)
 			(type default)
@@ -3216,7 +3400,7 @@
 	)
 	(global_label "+8v 10mA"
 		(shape input)
-		(at 64.77 41.91 180)
+		(at 63.5 41.91 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3226,7 +3410,7 @@
 		)
 		(uuid "410a692f-a519-401c-8e63-992849c2c482")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 51.8668 41.91 0)
+			(at 50.5968 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3809,6 +3993,142 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 212.09 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04ae7643-b0da-40f3-9387-55aefb84455d")
+		(property "Reference" "#PWR06"
+			(at 212.09 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Shield"
+			(at 214.63 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 212.09 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b171eb2f-1b78-4a03-a970-509451cdef75")
+		)
+		(instances
+			(project "Icom"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 66.04 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f30c5bb-6abb-406f-b00d-fe03288b2d04")
+		(property "Reference" "R6"
+			(at 67.056 46.482 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 65.278 45.974 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 66.04 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 66.04 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "965d2d09-5380-4976-a66d-c63954cdc42c")
+		)
+		(pin "2"
+			(uuid "07259acb-d468-459e-8911-c64650558d9b")
+		)
+		(instances
+			(project "Icom"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:RJ45_LED_Shielded")
 		(at 80.01 49.53 0)
 		(unit 1)
@@ -4121,6 +4441,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 212.09 82.55 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4aa75708-a16a-4764-b476-ad24c01b97f2")
+		(property "Reference" "H2"
+			(at 214.63 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 214.63 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 212.09 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 212.09 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b3f6f4e-697b-4416-b26d-cf5c243e1920")
+		)
+		(instances
+			(project "Icom"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x04_Odd_Even")
 		(at 113.03 143.51 270)
 		(unit 1)
@@ -4138,7 +4525,7 @@
 			)
 		)
 		(property "Value" "Speaker Input Config"
-			(at 128.27 145.796 90)
+			(at 128.524 139.446 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4215,6 +4602,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 101.6 153.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5351de65-da77-4716-bbb8-95af82194b10")
+		(property "Reference" "R4"
+			(at 102.616 155.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100R"
+			(at 100.838 155.194 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 101.6 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 101.6 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f539faed-8c3e-45d3-9a83-00c6b586cfeb")
+		)
+		(pin "2"
+			(uuid "d2a94afc-ef7e-4476-859c-7e70e7638666")
+		)
+		(instances
+			(project "Icom"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Smitty:AudioJack4_SwitchTR1R2S")
 		(at 86.36 115.57 0)
 		(unit 1)
@@ -4240,7 +4696,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Libraries:Conn_3.5mm-PJ-393_C2837065_C668609_C128990"
+		(property "Footprint" "Libraries:Conn_3.5mm-PJ-393_SMT-C668609_TH-C145811"
 			(at 85.09 115.57 0)
 			(effects
 				(font
@@ -4267,7 +4723,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2939584"
+		(property "LCSC" "C6688609"
 			(at 86.36 115.57 0)
 			(effects
 				(font
@@ -4310,6 +4766,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 212.09 92.71 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a2f027a-f110-4139-ab39-96614de8bde2")
+		(property "Reference" "H3"
+			(at 214.63 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 214.63 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 212.09 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 212.09 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc533a30-13ad-41bc-982b-c96985cf2ac7")
+		)
+		(instances
+			(project "Icom"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 101.6 151.13 90)
 		(unit 1)
@@ -4336,7 +4859,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 101.6 151.13 0)
 			(effects
 				(font
@@ -4363,7 +4886,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22775"
+		(property "LCSC" ""
 			(at 101.6 151.13 90)
 			(effects
 				(font
@@ -4382,6 +4905,140 @@
 			(project "Icom"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 212.09 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0cf07b5-02b0-44f9-a8b9-4494ccc29550")
+		(property "Reference" "#PWR04"
+			(at 212.09 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Shield"
+			(at 214.63 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 212.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14688243-92ef-4015-8e8c-0fdd2ae1f8ff")
+		)
+		(instances
+			(project "Icom"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 212.09 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1e5f656-e26d-484f-83d2-03fbd2c80b31")
+		(property "Reference" "#PWR05"
+			(at 212.09 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Shield"
+			(at 214.63 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 212.09 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46da49eb-779b-4f90-ba0d-2d24aff4c47a")
+		)
+		(instances
+			(project "Icom"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -4449,6 +5106,142 @@
 			(project "Icom"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 212.09 72.39 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cccf652c-a001-4e4c-abd9-d7f68fad3573")
+		(property "Reference" "H1"
+			(at 214.63 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 214.63 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 212.09 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 212.09 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a2349ab8-b0ec-4379-953d-06d8440067da")
+		)
+		(instances
+			(project "Icom"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 120.65 153.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de954f8b-9b58-40ec-bc3b-a38d70b25923")
+		(property "Reference" "R5"
+			(at 121.666 155.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100R"
+			(at 119.888 155.194 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 120.65 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 120.65 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "876df865-84e9-45cb-b960-d20f11608761")
+		)
+		(pin "2"
+			(uuid "b62532b4-1510-4ea3-8ec3-15f73d309b65")
+		)
+		(instances
+			(project "Icom"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4594,7 +5387,7 @@
 		(dnp no)
 		(uuid "ef0affb2-cfda-4c14-ba66-4a1163c17027")
 		(property "Reference" "R3"
-			(at 119.634 155.448 0)
+			(at 119.38 150.114 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4603,7 +5396,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 121.666 157.48 0)
+			(at 121.412 150.114 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4611,7 +5404,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 120.65 151.13 0)
 			(effects
 				(font
@@ -4638,7 +5431,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22775"
+		(property "LCSC" ""
 			(at 120.65 151.13 90)
 			(effects
 				(font
@@ -4664,7 +5457,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 67.31 41.91 90)
+		(at 66.04 41.91 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4673,7 +5466,7 @@
 		(dnp no)
 		(uuid "fd701798-2e0f-4d56-afdb-6d9cd0ca8b74")
 		(property "Reference" "R1"
-			(at 67.31 46.482 90)
+			(at 55.88 44.196 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4681,15 +5474,15 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 67.31 44.196 90)
+			(at 59.69 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 67.31 41.91 0)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 66.04 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4698,7 +5491,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 67.31 41.91 0)
+			(at 66.04 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4707,7 +5500,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 67.31 41.91 0)
+			(at 66.04 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4715,8 +5508,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4190"
-			(at 67.31 41.91 90)
+		(property "LCSC" ""
+			(at 66.04 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
