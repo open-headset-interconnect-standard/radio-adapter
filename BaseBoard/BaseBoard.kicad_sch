@@ -4337,6 +4337,69 @@
 		)
 	)
 	(symbol
+		(lib_id "Smitty:Board_Artwork")
+		(at 83.82 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94a6e0ad-0126-4ef0-b464-11dcb5ca000c")
+		(property "Reference" "G2"
+			(at 87.63 169.4179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Board_Artwork"
+			(at 87.63 171.9579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OHIS:Logo_OHIS_Medium"
+			(at 83.82 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "G2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 139.7 92.71 0)
 		(unit 1)
@@ -4800,7 +4863,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OHIS:Logo_OHIS_Small"
+		(property "Footprint" "OHIS:Logo_OHIS_Medium"
 			(at 83.82 161.29 0)
 			(effects
 				(font
