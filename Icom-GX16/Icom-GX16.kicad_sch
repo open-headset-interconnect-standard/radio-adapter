@@ -5,676 +5,6 @@
 	(uuid "c4ba7992-28c5-4681-9fb2-8c405dcb2380")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:RJ45_LED_Shielded"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at -5.08 13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "RJ45_LED_Shielded"
-				(at 1.27 13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0.635 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0.635 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "RJ connector, 8P8C (8 positions 8 connected), two LEDs, Shielded"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "8P8C RJ socket jack connector led"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "8P8C* RJ45*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "RJ45_LED_Shielded_0_1"
-				(polyline
-					(pts
-						(xy -7.62 -7.62) (xy -6.35 -7.62)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 -5.08) (xy -6.35 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 7.62) (xy -6.35 7.62)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 10.16) (xy -6.35 10.16)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.858 -5.842) (xy -5.842 -5.842)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.858 9.398) (xy -5.842 9.398)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -7.62) (xy -6.35 -6.858)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -5.08) (xy -6.35 -5.842)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 7.62) (xy -6.35 8.382)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 10.16) (xy -6.35 9.398)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -6.223) (xy -5.207 -6.604)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -5.588) (xy -5.207 -5.969)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 4.445) (xy -6.35 4.445)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 5.715) (xy -6.35 5.715)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 9.017) (xy -5.207 8.636)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 9.652) (xy -5.207 9.271)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -3.175) (xy -5.08 -3.175) (xy -5.08 -3.175)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -1.905) (xy -5.08 -1.905) (xy -5.08 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -0.635) (xy -5.08 -0.635) (xy -5.08 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 0.635) (xy -5.08 0.635) (xy -5.08 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 1.905) (xy -5.08 1.905) (xy -5.08 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.588 -6.731) (xy -5.08 -6.223) (xy -5.461 -6.35)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.588 -6.096) (xy -5.08 -5.588) (xy -5.461 -5.715)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.588 8.509) (xy -5.08 9.017) (xy -5.461 8.89)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.588 9.144) (xy -5.08 9.652) (xy -5.461 9.525)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 3.175) (xy -6.35 3.175) (xy -6.35 3.175)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -5.842) (xy -6.858 -6.858) (xy -5.842 -6.858) (xy -6.35 -5.842)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 9.398) (xy -6.858 8.382) (xy -5.842 8.382) (xy -6.35 9.398)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -4.445) (xy -6.35 6.985) (xy 3.81 6.985) (xy 3.81 4.445) (xy 5.08 4.445) (xy 5.08 3.175)
-						(xy 6.35 3.175) (xy 6.35 -0.635) (xy 5.08 -0.635) (xy 5.08 -1.905) (xy 3.81 -1.905) (xy 3.81 -4.445)
-						(xy -6.35 -4.445) (xy -6.35 -4.445)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 7.62 12.7)
-					(end -7.62 -10.16)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "RJ45_LED_Shielded_1_1"
-				(pin passive line
-					(at 10.16 -7.62 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 7.62 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -7.62 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 7.62 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 10.16 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 10.16 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "SH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector_Generic:Conn_01x09"
 			(pin_names
 				(offset 1.016) hide)
@@ -1114,171 +444,6 @@
 							(font
 								(size 1.27 1.27)
 							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "OHIS:Logo_OHIS"
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "G"
-				(at 0 -6.604 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "Logo_OHIS"
-				(at 0.254 -4.572 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Libraries:Logo_OHIS_Medium"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Logo_OHIS_0_0"
-				(rectangle
-					(start -6.096 1.27)
-					(end -5.334 -0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start -5.3341 -1.2701)
-					(mid -5.0365 -1.9885)
-					(end -4.3181 -2.2861)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -4.318 2.286)
-					(mid -5.0364 1.9884)
-					(end -5.334 1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -0.762 -1.778)
-					(end 0.762 -2.286)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.334 1.27) (xy -5.334 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.318 -2.286) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.318 2.286) (xy -4.318 2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 5.3341 1.2701)
-					(mid 5.0365 1.9885)
-					(end 4.3181 2.2861)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.334 1.27)
-					(end 6.096 -0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(text "OHIS"
-					(at 0 0 0)
-					(effects
-						(font
-							(size 2.54 2.54)
 						)
 					)
 				)
@@ -1845,21 +1010,149 @@
 			)
 		)
 	)
-	(no_connect
-		(at 66.04 57.15)
-		(uuid "2a6bc989-81a9-4ccd-ad17-29a22abf795c")
+	(junction
+		(at 72.39 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "854362ec-2107-46ea-a64f-6b49637fad62")
+	)
+	(junction
+		(at 62.23 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4939142-cfe7-40f9-962a-8b49c6e68c62")
 	)
 	(no_connect
-		(at 66.04 39.37)
-		(uuid "567f2658-15b3-4f5a-894c-e7cbe75880e2")
+		(at 50.8 60.96)
+		(uuid "2fa18580-c7fc-4c36-954d-5cc9c611989b")
 	)
 	(no_connect
-		(at 66.04 41.91)
-		(uuid "62daa797-a167-4f82-bbc1-84854a7b3738")
+		(at 50.8 53.34)
+		(uuid "34541aa1-ce77-4b10-96d4-c3a667a00c6d")
 	)
 	(no_connect
-		(at 66.04 54.61)
-		(uuid "e7786e44-ded5-47aa-8a62-bc2973e297d2")
+		(at 50.8 66.04)
+		(uuid "487e47e2-cb0f-413c-a2ae-7835490bcae5")
+	)
+	(no_connect
+		(at 50.8 58.42)
+		(uuid "600321c7-39b2-4a9e-bc3d-0ffbfa99244f")
+	)
+	(no_connect
+		(at 50.8 48.26)
+		(uuid "768f4339-6ebd-4be8-9644-a9481a98824d")
+	)
+	(no_connect
+		(at 50.8 63.5)
+		(uuid "846fd91f-b97b-4365-8205-eb3db5fb4c3f")
+	)
+	(no_connect
+		(at 50.8 55.88)
+		(uuid "dfe93fe4-5319-4bc8-81b4-f955f00ff582")
+	)
+	(no_connect
+		(at 50.8 50.8)
+		(uuid "f9a4a3f4-0932-4ae4-a180-b64f92dd403b")
+	)
+	(wire
+		(pts
+			(xy 62.23 48.26) (xy 72.39 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d4c6da2-7cc2-4e1c-84b7-330e9f9a02a0")
+	)
+	(wire
+		(pts
+			(xy 62.23 55.88) (xy 72.39 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29cbad30-b3b6-494c-884e-5f208443d063")
+	)
+	(wire
+		(pts
+			(xy 62.23 45.72) (xy 72.39 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "375f5cfc-60ea-43c0-80a5-5399f6641b38")
+	)
+	(wire
+		(pts
+			(xy 62.23 63.5) (xy 72.39 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43716f3a-7333-4eb3-9136-eed6ebbef6b8")
+	)
+	(wire
+		(pts
+			(xy 62.23 58.42) (xy 72.39 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64395126-71bc-4310-b37f-de7278291be2")
+	)
+	(wire
+		(pts
+			(xy 62.23 66.04) (xy 72.39 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9648ebb9-e587-4f5d-b5bc-747bc9d05377")
+	)
+	(wire
+		(pts
+			(xy 62.23 50.8) (xy 72.39 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2d21476-a9fa-497a-86c8-ba209501d2f1")
+	)
+	(wire
+		(pts
+			(xy 50.8 45.72) (xy 62.23 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edb4a780-d1da-429b-9328-f04648fb60de")
+	)
+	(wire
+		(pts
+			(xy 62.23 53.34) (xy 72.39 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef53b39d-616a-4a3e-b050-c9e0b5be6bcc")
+	)
+	(wire
+		(pts
+			(xy 62.23 60.96) (xy 72.39 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff726865-c020-4fec-887c-632157bfdd71")
 	)
 	(text "Note: Some radios put serial data on Pin 3."
 		(exclude_from_sim no)
@@ -1949,7 +1242,7 @@
 	)
 	(global_label "~{PTT}"
 		(shape input)
-		(at 86.36 49.53 0)
+		(at 72.39 58.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1959,7 +1252,7 @@
 		)
 		(uuid "30f67f2a-0c8f-451c-b128-5d85d3171f90")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.5504 49.53 0)
+			(at 78.5804 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2191,7 +1484,7 @@
 	)
 	(global_label "AF Out"
 		(shape input)
-		(at 86.36 52.07 0)
+		(at 72.39 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2201,7 +1494,7 @@
 		)
 		(uuid "89d92858-dc7e-422f-9259-fa790c0882e4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.6952 52.07 0)
+			(at 81.7252 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2235,7 +1528,7 @@
 	)
 	(global_label "Mic+"
 		(shape input)
-		(at 86.36 44.45 0)
+		(at 72.39 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2245,7 +1538,7 @@
 		)
 		(uuid "9e081719-ec27-4b19-a5a3-4472a6899307")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 94.0624 44.45 0)
+			(at 80.0924 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2301,7 +1594,7 @@
 	)
 	(global_label "Freq Up{slash}Down"
 		(shape input)
-		(at 86.36 54.61 0)
+		(at 72.39 53.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2311,7 +1604,7 @@
 		)
 		(uuid "bef0e32d-bcdf-4b6c-9c38-ec0d2388ece4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.1337 54.61 0)
+			(at 89.1637 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2367,7 +1660,7 @@
 	)
 	(global_label "Power Gnd"
 		(shape input)
-		(at 86.36 41.91 0)
+		(at 72.39 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2377,7 +1670,7 @@
 		)
 		(uuid "d2cb14e2-cb49-4191-92fc-7c85b4e5e5f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.5051 41.91 0)
+			(at 85.5351 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2389,7 +1682,7 @@
 	)
 	(global_label "~{SQL Open}"
 		(shape input)
-		(at 86.36 39.37 0)
+		(at 72.39 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2399,7 +1692,7 @@
 		)
 		(uuid "d5be42d3-5ab8-4173-b9d8-655b91c81566")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 98.598 39.37 0)
+			(at 84.628 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2411,7 +1704,7 @@
 	)
 	(global_label "Mic Gnd"
 		(shape input)
-		(at 86.36 46.99 0)
+		(at 72.39 63.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2421,7 +1714,7 @@
 		)
 		(uuid "e47d83a9-bffe-449c-8f55-beb5877a607e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.0256 46.99 0)
+			(at 83.0556 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2433,7 +1726,7 @@
 	)
 	(global_label "+8v 10mA"
 		(shape input)
-		(at 86.36 57.15 0)
+		(at 72.39 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2443,7 +1736,7 @@
 		)
 		(uuid "eecd51f3-0e9c-42ed-a979-329bfcdd6e1c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.2632 57.15 0)
+			(at 85.2932 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2553,7 +1846,7 @@
 			(uuid "ac0d2b36-6687-40ab-96ce-5fafece16f33")
 		)
 		(instances
-			(project "Icom-RJ45"
+			(project "Icom-GX16"
 				(path "/c4ba7992-28c5-4681-9fb2-8c405dcb2380"
 					(reference "J3")
 					(unit 1)
@@ -2562,17 +1855,35 @@
 		)
 	)
 	(symbol
-		(lib_id "OHIS:Logo_OHIS")
-		(at 140.97 110.49 0)
+		(lib_id "Connector_Generic:Conn_01x09")
+		(at 57.15 55.88 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "076b9563-479f-4277-acaa-79a1029fb8f2")
-		(property "Reference" "G1"
-			(at 140.97 117.094 0)
+		(uuid "0b1717a4-bfd8-4b02-8c71-5ea4b5fbcdc4")
+		(property "Reference" "J4"
+			(at 58.42 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Icom GX16 Board"
+			(at 64.262 38.862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Libraries:Conn_B2B-RA_2.54mm_9pin_LtoR"
+			(at 57.15 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2580,8 +1891,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Logo_OHIS"
-			(at 141.224 115.062 0)
+		(property "Datasheet" "~"
+			(at 57.15 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2589,8 +1900,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "OHIS:Logo_OHIS_Medium"
-			(at 140.97 110.49 0)
+		(property "Description" "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 57.15 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2598,28 +1909,37 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "e7a6c0b1-5489-4c27-8ecc-70f9dd793fc6")
 		)
-		(property "Description" ""
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "a7b5cd8e-e0aa-4dcf-acbf-af4def987ff9")
+		)
+		(pin "8"
+			(uuid "5536fcc0-935e-4b7d-952a-5ca9c14aa786")
+		)
+		(pin "7"
+			(uuid "0fb56e06-ef22-4e10-9cca-7174421e7b69")
+		)
+		(pin "4"
+			(uuid "13fb5507-695b-4368-9849-37b219c98e02")
+		)
+		(pin "1"
+			(uuid "bd15a054-1da1-4cf5-a0e6-ad12e4841371")
+		)
+		(pin "9"
+			(uuid "3dc657cf-f8a4-4a12-9dd2-2dcac5e53530")
+		)
+		(pin "5"
+			(uuid "d849298c-657a-4d86-9e8e-ea5333a61235")
+		)
+		(pin "6"
+			(uuid "e2994928-4461-4a10-9640-c8011c6548f5")
 		)
 		(instances
-			(project "Icom-RJ45"
+			(project "Icom-GX16"
 				(path "/c4ba7992-28c5-4681-9fb2-8c405dcb2380"
-					(reference "G1")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -2683,7 +2003,7 @@
 			(uuid "81a19c3b-2d85-45e1-ab91-0f81ee0821bd")
 		)
 		(instances
-			(project "Icom-RJ45"
+			(project "Icom-GX16"
 				(path "/c4ba7992-28c5-4681-9fb2-8c405dcb2380"
 					(reference "#PWR01")
 					(unit 1)
@@ -2692,109 +2012,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:RJ45_LED_Shielded")
-		(at 76.2 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2289e2bb-38db-459b-9048-dd0fda6af630")
-		(property "Reference" "J1"
-			(at 76.2 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Mic Input"
-			(at 76.2 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_RJ:RJ45_Amphenol_RJHSE538X"
-			(at 76.2 48.895 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 48.895 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected), two LEDs, Shielded"
-			(at 76.2 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "ee059a57-e10f-41c2-9256-fa5a4f4e5392")
-		)
-		(pin "10"
-			(uuid "454b377f-d6e9-4ced-b354-6a19f07ab56a")
-		)
-		(pin "SH"
-			(uuid "9b8c2e4c-d75e-455c-a42d-57b81d28abbe")
-		)
-		(pin "6"
-			(uuid "e36a4337-e844-44db-a2aa-7f3cf4227306")
-		)
-		(pin "5"
-			(uuid "98f8a083-b0c2-4606-9357-6b60694d3de5")
-		)
-		(pin "8"
-			(uuid "0bd82ccf-95dc-4238-b8d4-7c6f231cb7ff")
-		)
-		(pin "1"
-			(uuid "9b5f1108-38f7-48a3-b044-63b0aa3f6599")
-		)
-		(pin "9"
-			(uuid "e40c82ae-b65a-416f-aafd-29742063da41")
-		)
-		(pin "4"
-			(uuid "3d91cf78-5754-4ac3-97e3-db35900d10c9")
-		)
-		(pin "11"
-			(uuid "6717247d-afc3-414b-9e68-0d3986a6a1b4")
-		)
-		(pin "12"
-			(uuid "0555851c-6ab0-4a82-8f64-5f77ac1a8a50")
-		)
-		(pin "3"
-			(uuid "0d2caba5-5088-44d2-b157-5ac539990824")
-		)
-		(pin "2"
-			(uuid "e726bf71-6e30-4b94-a627-c86786673a13")
-		)
-		(instances
-			(project "Icom-RJ45"
-				(path "/c4ba7992-28c5-4681-9fb2-8c405dcb2380"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
-		(at 76.2 62.23 0)
+		(at 72.39 45.72 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2803,7 +2022,7 @@
 		(fields_autoplaced yes)
 		(uuid "4df7360f-8907-4091-89e1-bedcfa01dc1f")
 		(property "Reference" "#PWR03"
-			(at 76.2 68.58 0)
+			(at 78.74 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2812,15 +2031,16 @@
 			)
 		)
 		(property "Value" "Shield"
-			(at 76.2 67.31 0)
+			(at 76.2 45.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 62.23 0)
+			(at 72.39 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2829,7 +2049,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 76.2 62.23 0)
+			(at 72.39 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2838,7 +2058,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 76.2 62.23 0)
+			(at 72.39 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2850,7 +2070,7 @@
 			(uuid "9dac970e-5815-4149-8b4d-3134b96629b3")
 		)
 		(instances
-			(project "Icom-RJ45"
+			(project "Icom-GX16"
 				(path "/c4ba7992-28c5-4681-9fb2-8c405dcb2380"
 					(reference "#PWR03")
 					(unit 1)
@@ -2917,9 +2137,100 @@
 			(uuid "bcc5a9bd-9f07-4aac-8c48-11fa1116f547")
 		)
 		(instances
-			(project "Icom-RJ45"
+			(project "Icom-GX16"
 				(path "/c4ba7992-28c5-4681-9fb2-8c405dcb2380"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x09")
+		(at 45.72 55.88 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6841103b-1801-4d63-9bc7-c872468e24e6")
+		(property "Reference" "J5"
+			(at 46.99 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Icom GX16 Board"
+			(at 52.832 38.862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Libraries:Conn_B2B-RA_2.54mm_9pin_LtoR"
+			(at 45.72 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 45.72 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b8ad74a5-a88e-44fc-b92d-c64dbc95e2c6")
+		)
+		(pin "2"
+			(uuid "94d93e68-d62c-44d4-a2db-63dd078a437d")
+		)
+		(pin "8"
+			(uuid "fad9460a-47fe-470c-aa2e-668147f4c862")
+		)
+		(pin "7"
+			(uuid "a92bec71-013f-4d1f-b08c-a7cc430ab1a4")
+		)
+		(pin "4"
+			(uuid "822cc9f3-c038-4065-a310-20730cbed825")
+		)
+		(pin "1"
+			(uuid "1b94d25f-4b62-4b5c-a6e1-f28de027483a")
+		)
+		(pin "9"
+			(uuid "7f7b23b5-0026-4363-a42c-0368e4aa0b8d")
+		)
+		(pin "5"
+			(uuid "be5799a3-7216-45cb-973f-7de73a1b160a")
+		)
+		(pin "6"
+			(uuid "1536b494-3fc2-4b91-839d-20313f1684e1")
+		)
+		(instances
+			(project "Icom-GX16"
+				(path "/c4ba7992-28c5-4681-9fb2-8c405dcb2380"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -3007,7 +2318,7 @@
 			(uuid "6b7ff6bb-8e21-4e96-92bb-655c17a2a691")
 		)
 		(instances
-			(project "Icom-RJ45"
+			(project "Icom-GX16"
 				(path "/c4ba7992-28c5-4681-9fb2-8c405dcb2380"
 					(reference "J2")
 					(unit 1)
@@ -3073,9 +2384,100 @@
 			(uuid "11ed763b-61c6-47db-8a6b-3898322be3c5")
 		)
 		(instances
-			(project "Icom-RJ45"
+			(project "Icom-GX16"
 				(path "/c4ba7992-28c5-4681-9fb2-8c405dcb2380"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x09")
+		(at 67.31 55.88 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e568f3a4-f42d-402e-8c66-a4c900c821f9")
+		(property "Reference" "J1"
+			(at 68.58 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Icom GX16 Board"
+			(at 74.422 38.862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Libraries:Conn_B2B-RA_2.54mm_9pin_RtoL"
+			(at 67.31 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 67.31 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "a7aedf1f-9afd-4349-b01e-a809b5cf8f84")
+		)
+		(pin "2"
+			(uuid "cd108202-2a57-462d-8098-34180ebd66ca")
+		)
+		(pin "8"
+			(uuid "3e082e33-ddd3-43d6-a448-36c7cf3817ec")
+		)
+		(pin "7"
+			(uuid "799afd6b-ceac-4e87-9005-be453354f7fd")
+		)
+		(pin "4"
+			(uuid "50c17230-6835-4a65-8281-6cf844abe65f")
+		)
+		(pin "1"
+			(uuid "c319b83c-2c27-4d68-9797-8ee95b3832f6")
+		)
+		(pin "9"
+			(uuid "bc275328-1e0a-4341-b308-bcb0cf593a49")
+		)
+		(pin "5"
+			(uuid "8f62c62b-ae0a-4b7e-ac2c-0e96cd8152fb")
+		)
+		(pin "6"
+			(uuid "e14f98fa-f40c-4e29-a097-4e2387f96ffe")
+		)
+		(instances
+			(project "Icom-GX16"
+				(path "/c4ba7992-28c5-4681-9fb2-8c405dcb2380"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -3140,7 +2542,7 @@
 			(uuid "b074b6aa-f3c7-4f00-9101-c0c9a467d050")
 		)
 		(instances
-			(project "Icom-RJ45"
+			(project "Icom-GX16"
 				(path "/c4ba7992-28c5-4681-9fb2-8c405dcb2380"
 					(reference "H1")
 					(unit 1)
