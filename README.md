@@ -1,7 +1,7 @@
 # Open Source OHIS Radio Adapter(s?)
 An open-source OHIS Radio Adapter.
 
-As of 2024-04-04, this is a Work In Progress.
+As of 2024-07-17, this is a Work In Progress.
 
 # Goals
 
@@ -31,3 +31,9 @@ As of 2024-04-04, I (@SmittyHalibut, Mark Smith, N6MTS) have submitted three sch
 * As of 2024-04-04, I've only done the schematics, and even then it's little more than throwing notes down "on paper."  I tried to cover:
     * Connector pinouts (see above).
     * Any electrical circuits required (mostly converting from OHIS's electret level to dynamic level for radios that want dynamic.)
+
+As of 2024-04-25, I (still @SmittyHalibut) laid out the boards described above and had them fabricated.
+
+* **I STILL HAVE NOT TESTED THEM!**
+
+As of 2024-07-17, I (still me) am chatting with @gx1400 about this.  I'm going to send him some of the boards I ordered back in April and he'll help me test.
