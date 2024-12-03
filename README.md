@@ -37,3 +37,50 @@ As of 2024-04-25, I (still @SmittyHalibut) laid out the boards described above a
 * **I STILL HAVE NOT TESTED THEM!**
 
 As of 2024-07-17, I (still me) am chatting with @gx1400 about this.  I'm going to send him some of the boards I ordered back in April and he'll help me test.
+
+As of 2024-12-03, I (STILL me) am sending hardware to @gx1400 and a few others for testing.  These tests are covering:
+
+* Yaesu:
+  * :check: RJ45 8p8c
+  * :check: RJ14 6p6c
+  * :green_square: GX16
+* Icom:
+  * :green_square: RJ45 8p8c
+  * :check: GX16
+* Kenwood:
+  * :check: RJ45 8p8c
+  * :check: GX16
+
+If you can test Yaesu GX16 or Icom RJ45, please reach out to me.  @SmittyHalibut on github, or on Discord.
+
+# Parts
+
+Electrical components, in recommended order of assembly:
+* 1x 2x2 pin header right angle
+* 1x 2x4 pin header right angle
+* 1x 1k axial resistor
+* 1x 6.2k axial resistor
+* 2x 100R axial resistors
+* 2x 10uF
+* 1x 1k pot
+* 1x 5381 (RJ45 with LED) for OHIS socket
+
+Mechanical components, same as User kit:
+* 4x M3 6mm screw
+* 4x M3 10mm screw
+* 4x M3 14mm brass stand-off
+* 4x M3 3mm ABS stand-off
+* 5x .1" jumper
+
+PCBs in this repo:
+* 2x Top-bottom panels
+* 1x Main board
+* 1x Shim board
+
+Radio Specific parts, in recommended order of assembly:
+* 1x Radio Specific Board
+* 1x 3.5mm TRRS "headphone/speaker" connector
+* Microphone connector.  Either one of:
+  * 5380 (RJ45 with no LED) or 5381 (with LED) if its easier, but the LEDs aren't used.
+  * GX16 connector, and GX16 riser board
+
