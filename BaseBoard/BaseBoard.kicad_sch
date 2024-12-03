@@ -992,7 +992,7 @@
 				)
 			)
 		)
-		(symbol "Device:R_Potentiometer"
+		(symbol "Device:R_Potentiometer_Small"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -1006,7 +1006,7 @@
 					)
 				)
 			)
-			(property "Value" "R_Potentiometer"
+			(property "Value" "R_Potentiometer_Small"
 				(at -2.54 0 90)
 				(effects
 					(font
@@ -1059,22 +1059,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_Potentiometer_0_1"
+			(symbol "R_Potentiometer_Small_0_1"
 				(polyline
 					(pts
-						(xy 2.54 0) (xy 1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+						(xy 0.889 0) (xy 0.635 0) (xy 1.651 0.381) (xy 1.651 -0.381) (xy 0.635 0) (xy 0.889 0)
 					)
 					(stroke
 						(width 0)
@@ -1085,8 +1073,8 @@
 					)
 				)
 				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
+					(start 0.762 1.8034)
+					(end -0.762 -1.8034)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1096,57 +1084,57 @@
 					)
 				)
 			)
-			(symbol "R_Potentiometer_1_1"
+			(symbol "R_Potentiometer_Small_1_1"
 				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
+					(at 0 2.54 270)
+					(length 0.635)
 					(name "1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.635 0.635)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.635 0.635)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
+					(at 2.54 0 180)
+					(length 0.9906)
 					(name "2"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.635 0.635)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.635 0.635)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
+					(at 0 -2.54 90)
+					(length 0.635)
 					(name "3"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.635 0.635)
 							)
 						)
 					)
 					(number "3"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.635 0.635)
 							)
 						)
 					)
@@ -2239,6 +2227,70 @@
 				)
 			)
 		)
+		(symbol "smitty:BOM_Item"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BOM"
+				(at 0 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Libraries:BOM_Item"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BOM_Item_0_1"
+				(rectangle
+					(start -1.27 -1.016)
+					(end 1.27 -1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 116.84 44.45)
@@ -2283,16 +2335,16 @@
 		(uuid "40af8ead-4eda-4663-8424-07bddefb5552")
 	)
 	(junction
+		(at 121.92 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43fe0324-c6c6-4d65-b4b7-85249dfe6399")
+	)
+	(junction
 		(at 153.67 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5e7ea424-3395-4660-9846-33af6c3174c2")
-	)
-	(junction
-		(at 121.92 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7c494c1b-9923-4a60-9317-24f0962191e6")
 	)
 	(junction
 		(at 125.73 100.33)
@@ -2442,7 +2494,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 50.8) (xy 125.73 48.26)
+			(xy 125.73 46.99) (xy 125.73 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2552,7 +2604,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 39.37) (xy 125.73 40.64)
+			(xy 125.73 39.37) (xy 125.73 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2712,6 +2764,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 44.45) (xy 123.19 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea86d06c-32f4-4e0e-996d-f75bf1202ac1")
+	)
+	(wire
+		(pts
 			(xy 153.67 36.83) (xy 153.67 39.37)
 		)
 		(stroke
@@ -2811,6 +2873,17 @@
 			)
 		)
 		(uuid "90dcf33b-a90e-4186-826f-f41c0a7ce588")
+	)
+	(text "BOM:\n1x 5381 RF45 with LEDs\n1x 2x2 pin header right angle\n1x 2x4 pin header right angle\n2x 10uF\n1x 6.2k resistor\n1x 1k resistor\n2x 100R resistors\n1x 1k potentiometer\n"
+		(exclude_from_sim no)
+		(at 44.45 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "98391bb4-f46f-46c9-93cd-45cd7000d9ed")
 	)
 	(text "Jumper: Headphone\nNo Jumper: Speaker"
 		(exclude_from_sim no)
@@ -3452,10 +3525,10 @@
 		(lib_id "Device:R_Small")
 		(at 156.21 34.29 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00df5ced-8483-423d-be4d-82785ef022e0")
 		(property "Reference" "R11"
 			(at 157.734 33.528 0)
@@ -3518,44 +3591,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
-		(at 125.73 44.45 180)
+		(lib_id "smitty:BOM_Item")
+		(at 50.8 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "06a73e63-0d0b-4b80-bf70-dba4a4691360")
-		(property "Reference" "RV1"
-			(at 128.27 43.1799 0)
+		(uuid "04197b70-3026-4e6c-8ad6-4bf820288b31")
+		(property "Reference" "BOM7"
+			(at 50.8 167.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "1k"
-			(at 128.27 45.7199 0)
+		(property "Value" "M3 3mm ABS standoff"
+			(at 50.8 169.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Piher_PT-6-H_Horizontal"
-			(at 125.73 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 125.73 44.45 0)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 50.8 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3563,8 +3625,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Potentiometer"
-			(at 125.73 44.45 0)
+		(property "Datasheet" ""
+			(at 50.8 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3572,19 +3634,457 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "55de9c37-1319-4765-9188-54d2b3082bf9")
+		(property "Description" ""
+			(at 50.8 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "2"
-			(uuid "d1974800-cbb3-4f24-9ac2-da62ea4331a3")
+		(property "Link" "https://www.ebay.com/itm/201415009549"
+			(at 50.8 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "1"
-			(uuid "91504ba6-ab35-4854-91fa-9a7235409049")
+		(property "Manufacturer" "Generic"
+			(at 50.8 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 3mm ABS standoff"
+			(at 50.8 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "1000"
+			(at 50.8 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "12.76"
+			(at 50.8 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 50.8 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 50.8 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(instances
 			(project "BaseBoard"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
-					(reference "RV1")
+					(reference "BOM7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 158.115 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05723ddc-1b2e-4860-a0b2-7176698fc714")
+		(property "Reference" "BOM22"
+			(at 158.115 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ".1\" Jumper"
+			(at 158.115 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 158.115 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.115 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 158.115 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/180973205082"
+			(at 158.115 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 158.115 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" ".1\" Pin Jumper"
+			(at 158.115 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "400"
+			(at 158.115 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "7.96"
+			(at 158.115 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 158.115 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 158.115 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 78.105 131.445 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1437d8f5-5bf5-46ba-92fb-d0c65bbb981b")
+		(property "Reference" "BOM9"
+			(at 78.105 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 6mm SS screw"
+			(at 78.105 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 78.105 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.105 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.105 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/185035090471"
+			(at 78.105 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 78.105 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 6mm SS screw"
+			(at 78.105 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "500"
+			(at 78.105 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=15.96"
+			(at 78.105 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 78.105 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 78.105 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 88.9 131.445 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d099335-7b68-401e-a7fc-4919063bf75b")
+		(property "Reference" "BOM13"
+			(at 88.9 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 6mm SS screw"
+			(at 88.9 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 88.9 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 88.9 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/185035090471"
+			(at 88.9 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 88.9 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 6mm SS screw"
+			(at 88.9 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "500"
+			(at 88.9 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=15.96"
+			(at 88.9 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 88.9 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 88.9 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM13")
 					(unit 1)
 				)
 			)
@@ -3658,6 +4158,131 @@
 		)
 	)
 	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 88.9 151.765 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26a9e5a4-0052-4a72-be67-73236c0e28d0")
+		(property "Reference" "BOM14"
+			(at 88.9 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 14mm brass standoff"
+			(at 88.9 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 88.9 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 88.9 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/201415009549"
+			(at 88.9 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 88.9 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 14mm brass standoff"
+			(at 88.9 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "400"
+			(at 88.9 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=49.52+1.95"
+			(at 88.9 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 88.9 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 88.9 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 193.04 106.68 0)
 		(unit 1)
@@ -3725,6 +4350,131 @@
 		)
 	)
 	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 147.32 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3612b399-1859-4a37-b121-a2ed281820d2")
+		(property "Reference" "BOM21"
+			(at 147.32 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ".1\" Jumper"
+			(at 147.32 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 147.32 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 147.32 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/180973205082"
+			(at 147.32 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 147.32 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" ".1\" Pin Jumper"
+			(at 147.32 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "400"
+			(at 147.32 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "7.96"
+			(at 147.32 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 147.32 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 147.32 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "OHIS:Conn_RJ45_OHIS_LED_Shield")
 		(at 231.14 49.53 0)
 		(mirror y)
@@ -3770,6 +4520,69 @@
 			)
 		)
 		(property "Description" "RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded"
+			(at 231.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.mouser.com/ProductDetail/523-RJHSE-5380"
+			(at 231.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Amphenol"
+			(at 231.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RJHSE-5381"
+			(at 231.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "120"
+			(at 231.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=127.20"
+			(at 231.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 231.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
 			(at 231.14 49.53 0)
 			(effects
 				(font
@@ -3827,13 +4640,138 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 142.24 43.18 90)
+		(lib_id "smitty:BOM_Item")
+		(at 99.695 131.445 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f0af7fb-ec31-4626-b5f1-e6741eb0303a")
+		(property "Reference" "BOM17"
+			(at 99.695 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 6mm SS screw"
+			(at 99.695 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 99.695 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.695 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.695 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/185035090471"
+			(at 99.695 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 99.695 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 6mm SS screw"
+			(at 99.695 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "500"
+			(at 99.695 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=15.96"
+			(at 99.695 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 99.695 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 99.695 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 142.24 43.18 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
 		(uuid "409d98cc-752b-489b-8779-cf83a79747e8")
 		(property "Reference" "C3"
 			(at 142.24 48.006 90)
@@ -3894,13 +4832,138 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 119.38 48.26 270)
+		(lib_id "smitty:BOM_Item")
+		(at 50.165 193.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "458721bb-4d0d-4a46-8cc3-fba4ac0a89c6")
+		(property "Reference" "BOM6"
+			(at 50.165 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 10mm SS screw"
+			(at 50.165 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 50.165 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.165 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.165 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/185035090471"
+			(at 50.165 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 50.165 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 10mm SS screw"
+			(at 50.165 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "500"
+			(at 50.165 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "19.96"
+			(at 50.165 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 50.165 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 50.165 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 119.38 48.26 270)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
 		(uuid "4b3a61b7-4d5b-4356-8b45-7a9610800791")
 		(property "Reference" "C4"
 			(at 119.634 53.34 90)
@@ -4022,6 +5085,69 @@
 				(hide yes)
 			)
 		)
+		(property "Link" "https://www.ebay.com/itm/181918596973"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" ".1\" 3x40 right angle 2.54mm Pin Header"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "40"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "2.49"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "631da4d5-4295-4e4a-ad8f-d31eb26ee092")
 		)
@@ -4056,13 +5182,388 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 139.7 111.76 180)
+		(lib_id "smitty:BOM_Item")
+		(at 78.105 151.765 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "594113a8-15c0-4bcc-adb3-f4e02386a7dd")
+		(property "Reference" "BOM10"
+			(at 78.105 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 14mm brass standoff"
+			(at 78.105 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 78.105 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.105 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.105 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/201415009549"
+			(at 78.105 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 78.105 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 14mm brass standoff"
+			(at 78.105 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "400"
+			(at 78.105 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=49.52+1.95"
+			(at 78.105 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 78.105 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 78.105 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 50.165 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63581892-e109-448c-9766-fd13513fce48")
+		(property "Reference" "BOM5"
+			(at 50.165 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Bottom Board"
+			(at 50.165 182.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 50.165 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.165 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.165 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" ""
+			(at 50.165 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Board Fab"
+			(at 50.165 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" ""
+			(at 50.165 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "100"
+			(at 50.165 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=36.62+20"
+			(at 50.165 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 50.165 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 50.165 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 77.47 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d7f8ea8-2dff-425a-a431-9fed03243c8a")
+		(property "Reference" "BOM8"
+			(at 77.47 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 10mm SS screw"
+			(at 77.47 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 77.47 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 77.47 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/185035090471"
+			(at 77.47 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 77.47 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 10mm SS screw"
+			(at 77.47 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "500"
+			(at 77.47 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "19.96"
+			(at 77.47 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 77.47 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 77.47 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 139.7 111.76 180)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
 		(uuid "777d3e89-1943-416f-8d8a-457c7ef76e41")
 		(property "Reference" "R5"
 			(at 135.382 110.744 0)
@@ -4134,6 +5635,255 @@
 		)
 	)
 	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 50.165 131.445 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7a0441ec-0b56-4d85-a5bf-242744e0d915")
+		(property "Reference" "BOM1"
+			(at 50.165 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 6mm SS screw"
+			(at 50.165 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 50.165 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.165 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.165 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/185035090471"
+			(at 50.165 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 50.165 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 6mm SS screw"
+			(at 50.165 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "500"
+			(at 50.165 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=15.96"
+			(at 50.165 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 50.165 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 50.165 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 99.695 169.545 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80720eda-f8df-4a21-9573-b290dac88627")
+		(property "Reference" "BOM19"
+			(at 99.695 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 3mm ABS standoff"
+			(at 99.695 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 99.695 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.695 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.695 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/201415009549"
+			(at 99.695 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 99.695 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 3mm ABS standoff"
+			(at 99.695 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "1000"
+			(at 99.695 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "12.76"
+			(at 99.695 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 99.695 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 99.695 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 153.67 34.29 0)
 		(unit 1)
@@ -4187,6 +5937,51 @@
 				(hide yes)
 			)
 		)
+		(property "Link" "https://www.mouser.com/ProductDetail/YAGEO/CFR-12JB-52-6K2?qs=oypCK0zG325%252BixiZxtYDPA%3D%3D"
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" " CFR-12JB-52-6K2 "
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "100"
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "1.90"
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "81748ea5-d78b-4fef-8979-1998f483cc44")
 		)
@@ -4197,6 +5992,131 @@
 			(project "BaseBoard"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 136.525 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83f495e7-0764-4c45-849d-ca4692608078")
+		(property "Reference" "BOM20"
+			(at 136.525 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ".1\" Jumper"
+			(at 136.525 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 136.525 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 136.525 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 136.525 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/180973205082"
+			(at 136.525 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 136.525 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" ".1\" Pin Jumper"
+			(at 136.525 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "400"
+			(at 136.525 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "7.96"
+			(at 136.525 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 136.525 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 136.525 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM20")
 					(unit 1)
 				)
 			)
@@ -4337,43 +6257,42 @@
 		)
 	)
 	(symbol
-		(lib_id "Smitty:Board_Artwork")
-		(at 83.82 168.91 0)
+		(lib_id "smitty:BOM_Item")
+		(at 88.9 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "94a6e0ad-0126-4ef0-b464-11dcb5ca000c")
-		(property "Reference" "G2"
-			(at 87.63 169.4179 0)
+		(uuid "9458d5ad-352e-48fa-8872-68ea2a4e9652")
+		(property "Reference" "BOM15"
+			(at 88.9 167.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Board_Artwork"
-			(at 87.63 171.9579 0)
+		(property "Value" "M3 3mm ABS standoff"
+			(at 88.9 169.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "OHIS:Logo_OHIS_Medium"
-			(at 83.82 168.91 0)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 88.9 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 168.91 0)
+			(at 88.9 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4382,7 +6301,133 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.82 168.91 0)
+			(at 88.9 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/201415009549"
+			(at 88.9 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 88.9 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 3mm ABS standoff"
+			(at 88.9 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "1000"
+			(at 88.9 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "12.76"
+			(at 88.9 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 88.9 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 88.9 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Smitty:Board_Artwork")
+		(at 57.785 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94a6e0ad-0126-4ef0-b464-11dcb5ca000c")
+		(property "Reference" "G2"
+			(at 61.595 114.8079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Board_Artwork"
+			(at 61.595 117.3479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OHIS:Logo_OHIS_Medium"
+			(at 57.785 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.785 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.785 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4400,13 +6445,138 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 139.7 92.71 0)
+		(lib_id "smitty:BOM_Item")
+		(at 50.165 161.925 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97ff45cf-5f8a-4327-93d6-0659f08db2c0")
+		(property "Reference" "BOM4"
+			(at 50.165 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Main Board"
+			(at 50.165 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 50.165 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.165 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.165 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" ""
+			(at 50.165 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Board Fab"
+			(at 50.165 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" ""
+			(at 50.165 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "100"
+			(at 50.165 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=36.62+20"
+			(at 50.165 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 50.165 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 50.165 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 139.7 92.71 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
 		(uuid "994f6cce-a6b5-4826-9287-08ca10993cee")
 		(property "Reference" "R7"
 			(at 138.684 93.98 0)
@@ -4568,6 +6738,256 @@
 		)
 	)
 	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 168.91 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a691ba26-fd6b-46a7-845e-f08b1ff7c62a")
+		(property "Reference" "BOM23"
+			(at 168.91 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ".1\" Jumper"
+			(at 168.91 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 168.91 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 168.91 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/180973205082"
+			(at 168.91 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 168.91 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" ".1\" Pin Jumper"
+			(at 168.91 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "400"
+			(at 168.91 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "7.96"
+			(at 168.91 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 168.91 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 168.91 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 99.06 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "acf0a7dd-6a8c-4c8d-a703-a6409e410467")
+		(property "Reference" "BOM16"
+			(at 99.06 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 10mm SS screw"
+			(at 99.06 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 99.06 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/185035090471"
+			(at 99.06 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 99.06 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 10mm SS screw"
+			(at 99.06 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "500"
+			(at 99.06 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "19.96"
+			(at 99.06 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 99.06 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 99.06 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 142.24 39.37 90)
 		(unit 1)
@@ -4619,6 +7039,51 @@
 				(hide yes)
 			)
 		)
+		(property "Link" "https://www.mouser.com/ProductDetail/TDK/FG28X5R1E106MRT06?qs=sGAEpiMZZMvsSlwiRhF8qu1N8m6Tr3soRv%2F6PLISIe9OIxN7vyCrdA%3D%3D"
+			(at 142.24 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 142.24 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "FG28X5R1E106MRT06 "
+			(at 142.24 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "200"
+			(at 142.24 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=32.40"
+			(at 142.24 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b0090675-89ec-4fb2-8db9-94c5cd320f43")
 		)
@@ -4638,10 +7103,10 @@
 		(lib_id "Device:R_Small")
 		(at 246.38 44.45 270)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b10d90ae-9c9d-4d08-8449-f1759fa40349")
 		(property "Reference" "R12"
 			(at 246.38 49.022 90)
@@ -4837,7 +7302,7 @@
 	)
 	(symbol
 		(lib_id "Smitty:Board_Artwork")
-		(at 83.82 161.29 0)
+		(at 57.785 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -4846,7 +7311,7 @@
 		(fields_autoplaced yes)
 		(uuid "be60ca0b-0238-44c4-b725-2e69933e682c")
 		(property "Reference" "G1"
-			(at 87.63 161.7979 0)
+			(at 61.595 107.1879 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4855,7 +7320,7 @@
 			)
 		)
 		(property "Value" "Board_Artwork"
-			(at 87.63 164.3379 0)
+			(at 61.595 109.7279 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4864,7 +7329,7 @@
 			)
 		)
 		(property "Footprint" "OHIS:Logo_OHIS_Medium"
-			(at 83.82 161.29 0)
+			(at 57.785 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4872,7 +7337,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 161.29 0)
+			(at 57.785 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4881,7 +7346,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.82 161.29 0)
+			(at 57.785 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4893,6 +7358,256 @@
 			(project "BaseBoard"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "G1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 99.695 151.765 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfb24cf1-22bc-47f0-82a9-37508695fe4f")
+		(property "Reference" "BOM18"
+			(at 99.695 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 14mm brass standoff"
+			(at 99.695 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 99.695 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.695 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.695 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/201415009549"
+			(at 99.695 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 99.695 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 14mm brass standoff"
+			(at 99.695 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "400"
+			(at 99.695 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=49.52+1.95"
+			(at 99.695 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 99.695 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 99.695 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 180.975 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c13c15f8-44ea-4a14-acbd-f38c9b0dc331")
+		(property "Reference" "BOM24"
+			(at 180.975 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ".1\" Jumper"
+			(at 180.975 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 180.975 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.975 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 180.975 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/180973205082"
+			(at 180.975 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 180.975 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" ".1\" Pin Jumper"
+			(at 180.975 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "400"
+			(at 180.975 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "7.96"
+			(at 180.975 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 180.975 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 180.975 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM24")
 					(unit 1)
 				)
 			)
@@ -4944,6 +7659,69 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 142.24 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.mouser.com/ProductDetail/YAGEO/CFR-12JB-52-100R?qs=8uyp%2Fy7yFW6rEHacexpawQ%3D%3D"
+			(at 142.24 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 142.24 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" " CFR-12JB-52-100R "
+			(at 142.24 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "100"
+			(at 142.24 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "2.80"
+			(at 142.24 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 142.24 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
 			(at 142.24 111.76 0)
 			(effects
 				(font
@@ -5021,6 +7799,69 @@
 				(hide yes)
 			)
 		)
+		(property "Link" "https://www.mouser.com/ProductDetail/YAGEO/CFR-12JB-52-100R?qs=8uyp%2Fy7yFW6rEHacexpawQ%3D%3D"
+			(at 142.24 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 142.24 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" " CFR-12JB-52-100R "
+			(at 142.24 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "100"
+			(at 142.24 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "2.80"
+			(at 142.24 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 142.24 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 142.24 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ed07a6d4-2d1a-4e01-99f3-116e914fe38a")
 		)
@@ -5031,6 +7872,400 @@
 			(project "BaseBoard"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer_Small")
+		(at 125.73 44.45 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c5ac7b1d-4dd9-4814-89e3-a1a4793ac10e")
+		(property "Reference" "RV2"
+			(at 128.27 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1k"
+			(at 128.27 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Piher_PT-6-H_Horizontal"
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Piher"
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Or Generic" ""
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "N6-S25T0C-102"
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.mouser.com/ProductDetail/531-N6-S25T0C-1K"
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "100"
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "38.00"
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "914a8ec5-b576-42e0-942e-da310f33fa57")
+		)
+		(pin "2"
+			(uuid "e10e76fb-3a11-4477-81ef-c6a415dbc59c")
+		)
+		(pin "3"
+			(uuid "bed5eb65-9d3e-422f-a3b7-93ed1696b41a")
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "RV2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 78.105 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7f0dafc-1ac8-416c-8f28-9a76d736fd3f")
+		(property "Reference" "BOM11"
+			(at 78.105 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 3mm ABS standoff"
+			(at 78.105 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 78.105 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.105 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.105 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/201415009549"
+			(at 78.105 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 78.105 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 3mm ABS standoff"
+			(at 78.105 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "1000"
+			(at 78.105 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "12.76"
+			(at 78.105 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 78.105 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 78.105 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 88.265 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d33e9b7d-0e04-4cc1-9573-a9975a2cb89e")
+		(property "Reference" "BOM12"
+			(at 88.265 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 10mm SS screw"
+			(at 88.265 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 88.265 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.265 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 88.265 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/185035090471"
+			(at 88.265 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 88.265 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 10mm SS screw"
+			(at 88.265 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "500"
+			(at 88.265 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "19.96"
+			(at 88.265 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 88.265 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 88.265 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM12")
 					(unit 1)
 				)
 			)
@@ -5083,6 +8318,69 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/181918596973"
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" ".1\" 3x40 right angle 2.54mm Pin Header"
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "40"
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "2.49"
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
 			(at 142.24 62.23 0)
 			(effects
 				(font
@@ -5174,6 +8472,256 @@
 			(project "BaseBoard"
 				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 50.165 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da82d6e4-8555-4e0b-9c8c-0802e7f8a43d")
+		(property "Reference" "BOM2"
+			(at 50.165 137.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Top Board"
+			(at 50.165 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 50.165 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.165 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.165 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" ""
+			(at 50.165 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Board Fab"
+			(at 50.165 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" ""
+			(at 50.165 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "100"
+			(at 50.165 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=36.62+20"
+			(at 50.165 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 50.165 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 50.165 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "smitty:BOM_Item")
+		(at 50.165 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3c559c0-3084-4e61-b0d0-4291e4900763")
+		(property "Reference" "BOM3"
+			(at 50.165 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3 14mm brass standoff"
+			(at 50.165 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Libraries:BOM_Item"
+			(at 50.165 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.165 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.165 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.ebay.com/itm/201415009549"
+			(at 50.165 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 50.165 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M3 14mm brass standoff"
+			(at 50.165 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "400"
+			(at 50.165 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=49.52+1.95"
+			(at 50.165 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 50.165 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
+			(at 50.165 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/6a3924fa-c381-477c-bc5e-4effe098c460"
+					(reference "BOM3")
 					(unit 1)
 				)
 			)
@@ -5366,6 +8914,51 @@
 				(hide yes)
 			)
 		)
+		(property "Link" "https://www.mouser.com/ProductDetail/TDK/FG28X5R1E106MRT06?qs=sGAEpiMZZMvsSlwiRhF8qu1N8m6Tr3soRv%2F6PLISIe9OIxN7vyCrdA%3D%3D"
+			(at 119.38 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 119.38 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "FG28X5R1E106MRT06 "
+			(at 119.38 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "200"
+			(at 119.38 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "=32.40"
+			(at 119.38 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a4858bb5-79e1-462e-a454-9a67aece5262")
 		)
@@ -5425,6 +9018,69 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 246.38 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.mouser.com/ProductDetail/YAGEO/CFR-12JB-52-1K?qs=8uyp%2Fy7yFW6RQpJpptx%2FjA%3D%3D"
+			(at 246.38 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 246.38 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" " CFR-12JB-52-1K "
+			(at 246.38 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z0 Buy in Qty" "100"
+			(at 246.38 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z1 Cost to buy" "2.80"
+			(at 246.38 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
+			(at 246.38 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
 			(at 246.38 41.91 0)
 			(effects
 				(font
