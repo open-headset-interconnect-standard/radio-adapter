@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,41 +9,42 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -53,7 +54,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -61,16 +61,19 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -106,7 +109,7 @@
 		(uuid "0ee61e3c-60f2-417d-a16a-805d5e29554f")
 		(at 106.07 71.84 -90)
 		(property "Reference" "BOM19"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "e4ea114e-9faf-4c4c-a943-cd40e6203929")
@@ -118,25 +121,13 @@
 			)
 		)
 		(property "Value" "M3 3mm ABS standoff"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "1317bed3-fec6-4c6a-a6dc-533e1ee225b1")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f1497e17-cda3-4248-bbc5-88d76a81d4d2")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -166,7 +157,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/201415009549"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -179,7 +170,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -192,7 +183,7 @@
 			)
 		)
 		(property "Part Number" "M3 3mm ABS standoff"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -205,7 +196,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "1000"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -218,7 +209,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "12.76"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -231,7 +222,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -244,7 +235,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -260,7 +251,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "5cc9e887-8b56-4a0c-9315-5dd4cd8897db")
@@ -271,6 +262,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
 		(layer "F.Cu")
@@ -300,21 +292,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "20a44963-d833-4746-ba28-667970a5299c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -327,7 +306,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -340,7 +319,7 @@
 			)
 		)
 		(property "Link" "https://www.mouser.com/ProductDetail/TDK/FG28X5R1E106MRT06?qs=sGAEpiMZZMvsSlwiRhF8qu1N8m6Tr3soRv%2F6PLISIe9OIxN7vyCrdA%3D%3D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -353,7 +332,7 @@
 			)
 		)
 		(property "Manufacturer" "TDK"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -366,7 +345,7 @@
 			)
 		)
 		(property "Part Number" "FG28X5R1E106MRT06 "
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -379,7 +358,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "200"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -392,7 +371,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=32.40"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -580,6 +559,7 @@
 			(pintype "passive")
 			(uuid "85266e90-846a-4ad2-ac66-6d0c31f2fc3e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.7mm_W2.5mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -617,19 +597,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a1d90cb8-9c4d-4ef9-bfa2-de48fddd2be3")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -673,7 +640,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "c145c33a-3a2b-42f7-bf59-8102bd72b378")
 		)
@@ -684,7 +651,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "050547ea-3bd1-4cdf-b9db-7a24b23fa7ba")
 		)
@@ -710,6 +677,7 @@
 			(pintype "input")
 			(uuid "fc4b6278-6c87-4110-9420-88f3c3876871")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
@@ -718,9 +686,8 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R6"
-			(at 3.81 -2.37 90)
+			(at -1.651 0 180)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "904480b1-b4c2-4268-b07c-92c0681ee937")
 			(effects
 				(font
@@ -740,21 +707,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "251b22ef-b417-487f-a7e8-bb005466d6bf")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -767,7 +721,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -780,7 +734,7 @@
 			)
 		)
 		(property "Link" "https://www.mouser.com/ProductDetail/YAGEO/CFR-12JB-52-100R?qs=8uyp%2Fy7yFW6rEHacexpawQ%3D%3D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -793,7 +747,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -806,7 +760,7 @@
 			)
 		)
 		(property "Part Number" " CFR-12JB-52-100R "
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -819,7 +773,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "100"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -832,7 +786,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "2.80"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -845,7 +799,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -858,7 +812,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1066,6 +1020,7 @@
 			(pintype "passive")
 			(uuid "e023826f-b49a-459f-aa2c-8fd6f8c7233e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1083,7 +1038,7 @@
 		(uuid "22cfc5af-e0c0-45c6-8809-59f01489b03e")
 		(at 109.07 68.84 -90)
 		(property "Reference" "BOM9"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "df8be26e-34cd-4b28-bc5d-9c82c10ba83b")
@@ -1095,25 +1050,13 @@
 			)
 		)
 		(property "Value" "M3 6mm SS screw"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "25682bf3-a071-450a-ace8-2ad7232a1efa")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "de532bcf-ed7b-4e61-8133-4db22d318802")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1143,7 +1086,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/185035090471"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1156,7 +1099,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1169,7 +1112,7 @@
 			)
 		)
 		(property "Part Number" "M3 6mm SS screw"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1182,7 +1125,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "500"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1195,7 +1138,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=15.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1208,7 +1151,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1221,7 +1164,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1237,7 +1180,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "500df705-56b7-42a4-936d-e8574fcc606e")
@@ -1248,13 +1191,14 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "23d6d523-df67-4493-b204-9f82c0dea53d")
 		(at 106.07 70.34 -90)
 		(property "Reference" "BOM15"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "cd56f823-8ee6-4756-8e88-eb59761933af")
@@ -1266,25 +1210,13 @@
 			)
 		)
 		(property "Value" "M3 3mm ABS standoff"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "a8b848a2-c42f-4f3f-9f9b-6887118cacbf")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0ae94641-3c15-404b-abb3-05185ccf49df")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1314,7 +1246,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/201415009549"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1327,7 +1259,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1340,7 +1272,7 @@
 			)
 		)
 		(property "Part Number" "M3 3mm ABS standoff"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1353,7 +1285,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "1000"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1366,7 +1298,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "12.76"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1379,7 +1311,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1392,7 +1324,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1408,7 +1340,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "9acd1e45-5551-4c32-b434-5089799cbcf3")
@@ -1419,13 +1351,14 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "2ddec910-3a63-496c-9283-6b3eb9e4e08b")
 		(at 104.57 68.84 -90)
 		(property "Reference" "BOM12"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "2999aec6-53ef-4a8f-bf18-7169217897d5")
@@ -1437,25 +1370,13 @@
 			)
 		)
 		(property "Value" "M3 10mm SS screw"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "b522d4a7-1919-43e7-9f03-8100f913341c")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a8dcdb0d-f228-4f3f-b452-29fadd8270bc")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1485,7 +1406,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/185035090471"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1498,7 +1419,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1511,7 +1432,7 @@
 			)
 		)
 		(property "Part Number" "M3 10mm SS screw"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1524,7 +1445,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "500"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1537,7 +1458,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "19.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1550,7 +1471,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1563,7 +1484,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1579,7 +1500,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "7cee5359-bd95-44f5-9ebd-4a962b252df1")
@@ -1590,6 +1511,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Potentiometer_THT:Potentiometer_Piher_PT-6-H_Horizontal"
 		(layer "F.Cu")
@@ -1619,21 +1541,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Piher_PT-6-H_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c8d3331c-e6d2-443b-bda9-2a51241bbc87")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1646,7 +1555,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1659,7 +1568,7 @@
 			)
 		)
 		(property "Manufacturer" "Piher"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1672,7 +1581,7 @@
 			)
 		)
 		(property "Or Generic" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1685,7 +1594,7 @@
 			)
 		)
 		(property "Part Number" "N6-S25T0C-102"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1698,7 +1607,7 @@
 			)
 		)
 		(property "Link" "https://www.mouser.com/ProductDetail/531-N6-S25T0C-1K"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1711,7 +1620,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "100"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1724,7 +1633,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "38.00"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1737,7 +1646,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1750,7 +1659,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2011,6 +1920,7 @@
 			(pintype "passive")
 			(uuid "86e61678-b9e7-4c1a-9c8a-457f55ff00ea")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Piher_PT-6-H_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2051,21 +1961,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b787235f-035c-4fc4-be25-07a05b0889c8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2078,7 +1975,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2091,7 +1988,7 @@
 			)
 		)
 		(property "LCSC" "C9139"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2104,7 +2001,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/181918596973"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2117,7 +2014,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2130,7 +2027,7 @@
 			)
 		)
 		(property "Part Number" ".1\" 3x40 right angle 2.54mm Pin Header"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2143,7 +2040,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "40"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2156,7 +2053,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "2.49"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2169,7 +2066,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2182,7 +2079,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3058,6 +2955,7 @@
 			(pintype "passive")
 			(uuid "690dd17d-0379-4f53-9167-4acd72214ae7")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x04_P2.54mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3075,7 +2973,7 @@
 		(uuid "401a6e35-1e8a-427f-bbe6-9d1338a87cb9")
 		(at 104.57 67.34 -90)
 		(property "Reference" "BOM8"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "2ae16b63-5260-401d-ae88-1f43a58c37b4")
@@ -3087,25 +2985,13 @@
 			)
 		)
 		(property "Value" "M3 10mm SS screw"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "bc061010-dec3-4809-a0f3-da635256ecf2")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "215a1a36-3a6b-44d7-a03a-6a0a72eab9d6")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3135,7 +3021,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/185035090471"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3148,7 +3034,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3161,7 +3047,7 @@
 			)
 		)
 		(property "Part Number" "M3 10mm SS screw"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3174,7 +3060,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "500"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3187,7 +3073,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "19.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3200,7 +3086,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3213,7 +3099,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3229,7 +3115,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "94614cff-0057-4175-89d2-e58ee6fa33ba")
@@ -3240,13 +3126,14 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "42b005c1-7830-4055-a897-7f59d0cab004")
 		(at 107.57 68.84 -90)
 		(property "Reference" "BOM10"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "88c235c3-7ee1-4ff7-973e-3e1b227b7007")
@@ -3258,25 +3145,13 @@
 			)
 		)
 		(property "Value" "M3 14mm brass standoff"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "d50a9a1d-a770-4b98-9539-afa4b4cbab5d")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "58d077a2-7dfc-4510-99e7-4c1f23473285")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3306,7 +3181,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/201415009549"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3319,7 +3194,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3332,7 +3207,7 @@
 			)
 		)
 		(property "Part Number" "M3 14mm brass standoff"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3345,7 +3220,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "400"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3358,7 +3233,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=49.52+1.95"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3371,7 +3246,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3384,7 +3259,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3400,7 +3275,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "28a26c5c-b211-45ae-87ff-78c41fd402f6")
@@ -3411,6 +3286,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
@@ -3440,21 +3316,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1832134c-2132-4247-a391-49c3d46831d0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3467,7 +3330,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3480,7 +3343,7 @@
 			)
 		)
 		(property "Link" "https://www.mouser.com/ProductDetail/YAGEO/CFR-12JB-52-6K2?qs=oypCK0zG325%252BixiZxtYDPA%3D%3D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3493,7 +3356,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3506,7 +3369,7 @@
 			)
 		)
 		(property "Part Number" " CFR-12JB-52-6K2 "
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3519,7 +3382,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "100"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3532,7 +3395,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "1.90"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3740,6 +3603,7 @@
 			(pintype "passive")
 			(uuid "eb6b0c8f-0748-494a-a0f5-638c140e4963")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3757,7 +3621,7 @@
 		(uuid "4a8725d3-091b-476e-9876-2b2691934b1a")
 		(at 106.07 67.34 -90)
 		(property "Reference" "BOM7"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "072e15a2-5964-476e-8a17-d63d58ce56fd")
@@ -3769,25 +3633,13 @@
 			)
 		)
 		(property "Value" "M3 3mm ABS standoff"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "e65e183f-f8a2-46d9-9898-5cc79260851e")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "de9c3b59-ea1b-4521-a07d-2d990fa1e481")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3817,7 +3669,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/201415009549"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3830,7 +3682,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3843,7 +3695,7 @@
 			)
 		)
 		(property "Part Number" "M3 3mm ABS standoff"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3856,7 +3708,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "1000"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3869,7 +3721,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "12.76"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3882,7 +3734,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3895,7 +3747,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3911,7 +3763,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "204705c3-e957-4820-8d6d-f1876efd8ebc")
@@ -3922,6 +3774,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
@@ -3951,21 +3804,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fd51ea27-d337-4da5-bf0f-77d7b7fe2140")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3978,7 +3818,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3991,7 +3831,7 @@
 			)
 		)
 		(property "Link" "https://www.mouser.com/ProductDetail/YAGEO/CFR-12JT-52-1K?qs=uYSUDLr2H%2FJr7fImvVXADQ%3D%3D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4004,7 +3844,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4017,7 +3857,7 @@
 			)
 		)
 		(property "Part Number" " CFR-12JT-52-1K "
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4030,7 +3870,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "100"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4043,7 +3883,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "1.80"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4056,7 +3896,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4069,7 +3909,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4277,6 +4117,7 @@
 			(pintype "passive")
 			(uuid "4bb4e2d0-b1f7-4610-8bef-f62f901fa8ba")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4294,7 +4135,7 @@
 		(uuid "54591bb0-092c-4725-abcd-fd3e0ea21133")
 		(at 109.07 70.34 -90)
 		(property "Reference" "BOM13"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "119a61b2-ba3f-487d-ab55-80dc01336bec")
@@ -4306,25 +4147,13 @@
 			)
 		)
 		(property "Value" "M3 6mm SS screw"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "3d0acbd2-eb8d-4441-a94f-8e23709fad69")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d286bcdf-758b-4c8d-9bb1-c92e6e0e6f20")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4354,7 +4183,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/185035090471"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4367,7 +4196,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4380,7 +4209,7 @@
 			)
 		)
 		(property "Part Number" "M3 6mm SS screw"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4393,7 +4222,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "500"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4406,7 +4235,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=15.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4419,7 +4248,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4432,7 +4261,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4448,7 +4277,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "725eb6c9-e843-4932-b9c1-edd07b6e146b")
@@ -4459,13 +4288,14 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "5dc7edf4-aed1-4731-917e-d3ed8ebac7e7")
 		(at 109.07 73.34 -90)
 		(property "Reference" "BOM21"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "5439752e-12bf-4d76-a777-45a80639736c")
@@ -4477,25 +4307,13 @@
 			)
 		)
 		(property "Value" ".1\" Jumper"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "2bb742c7-242c-4a22-8930-a25f82ba6026")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ed4fdc6c-ec96-4d52-8cf9-fcdd305f4370")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4525,7 +4343,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/180973205082"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4538,7 +4356,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4551,7 +4369,7 @@
 			)
 		)
 		(property "Part Number" ".1\" Pin Jumper"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4564,7 +4382,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "400"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4577,7 +4395,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "7.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4590,7 +4408,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4603,7 +4421,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4619,7 +4437,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "93e034f7-3011-4d15-81e3-ec5fbe693294")
@@ -4630,13 +4448,14 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "614e7045-020f-41e6-b808-157be88b57a7")
 		(at 106.07 73.34 -90)
 		(property "Reference" "BOM23"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "fca5cc6f-182a-4faf-999b-3c22add57bfc")
@@ -4648,25 +4467,13 @@
 			)
 		)
 		(property "Value" ".1\" Jumper"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "7ab175f7-71d7-456a-ba77-b9eace6f1f2f")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "412e110f-dae8-4bc3-9fec-bc2c84cbea98")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4696,7 +4503,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/180973205082"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4709,7 +4516,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4722,7 +4529,7 @@
 			)
 		)
 		(property "Part Number" ".1\" Pin Jumper"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4735,7 +4542,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "400"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4748,7 +4555,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "7.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4761,7 +4568,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4774,7 +4581,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4790,7 +4597,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "8a286799-4656-468a-8d4b-8391fb34e1f5")
@@ -4801,13 +4608,14 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "68cb73ff-c48d-4124-b14c-1f265cfe5c5a")
 		(at 107.57 70.34 -90)
 		(property "Reference" "BOM14"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "a657fe71-4bcd-465a-af3f-9dc13d2f0d49")
@@ -4819,25 +4627,13 @@
 			)
 		)
 		(property "Value" "M3 14mm brass standoff"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "9a638503-216d-49f1-8807-15c30b972e04")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "75a6886c-f133-4a33-b1d8-402698e46883")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4867,7 +4663,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/201415009549"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4880,7 +4676,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4893,7 +4689,7 @@
 			)
 		)
 		(property "Part Number" "M3 14mm brass standoff"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4906,7 +4702,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "400"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4919,7 +4715,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=49.52+1.95"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4932,7 +4728,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4945,7 +4741,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4961,7 +4757,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "cbdbb40b-dbe5-4667-9690-20499a40f36c")
@@ -4972,6 +4768,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
@@ -5002,21 +4799,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "dc1280d2-7e31-4d6c-9c99-04c69b0c977d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5029,7 +4813,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5160,7 +4944,7 @@
 		(pad "1" smd roundrect
 			(at -1.475 0 270)
 			(size 1.15 1.8)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net 10 "Net-(C2-Pad1)")
 			(pintype "passive")
@@ -5169,12 +4953,13 @@
 		(pad "2" smd roundrect
 			(at 1.475 0 270)
 			(size 1.15 1.8)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net 19 "Net-(J3-Pin_3)")
 			(pintype "passive")
 			(uuid "0718c9e5-136f-48f8-8a1b-a074bf61a372")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5192,7 +4977,7 @@
 		(uuid "732217a0-7a26-4f91-a768-bb44b0111f48")
 		(at 104.57 70.34 -90)
 		(property "Reference" "BOM16"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "65b8fad0-2d53-4204-8b8a-1b7bb68b9196")
@@ -5204,25 +4989,13 @@
 			)
 		)
 		(property "Value" "M3 10mm SS screw"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "c8678dff-9d9b-42c3-abc2-f43fc6129bcf")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4853f0f8-ad3a-4480-9c5b-a4b7bceef26c")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5252,7 +5025,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/185035090471"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5265,7 +5038,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5278,7 +5051,7 @@
 			)
 		)
 		(property "Part Number" "M3 10mm SS screw"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5291,7 +5064,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "500"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5304,7 +5077,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "19.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5317,7 +5090,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5330,7 +5103,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5346,7 +5119,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "86532322-4543-4007-91fb-54126b19d259")
@@ -5357,13 +5130,14 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "73779e1b-f160-4d32-8f92-ad671afc6b2a")
 		(at 107.57 67.34 -90)
 		(property "Reference" "BOM6"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "0c99bb71-3b31-4061-8903-b83220d14f64")
@@ -5375,25 +5149,13 @@
 			)
 		)
 		(property "Value" "M3 10mm SS screw"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "5828afe7-e182-484b-8305-0d7d27f3dc8e")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d82e2aa0-6fee-4f05-a4c6-68cb0f602138")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5423,7 +5185,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/185035090471"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5436,7 +5198,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5449,7 +5211,7 @@
 			)
 		)
 		(property "Part Number" "M3 10mm SS screw"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5462,7 +5224,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "500"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5475,7 +5237,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "19.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5488,7 +5250,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5501,7 +5263,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5517,7 +5279,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "59c8aa02-10d5-4f47-a51f-5b95ad16dc10")
@@ -5528,6 +5290,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "OHIS:Logo_OHIS_Medium"
 		(layer "F.Cu")
@@ -5555,19 +5318,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "OHIS:Logo_OHIS_Medium"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5f9871ba-8bd6-4b64-90b4-015af5e69f29")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5639,7 +5389,7 @@
 				(width 0.3)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "e5e5726c-ecf4-46c3-a7ad-32ca0c25800e")
 		)
@@ -5650,7 +5400,7 @@
 				(width 0.3)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "0f1e25ef-93fb-4be4-8c26-d430cf883541")
 		)
@@ -5661,7 +5411,7 @@
 				(width 0.3)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "d90c1b9c-bee7-4854-80d0-9df5944571f6")
 		)
@@ -5710,26 +5460,14 @@
 				)
 			)
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 2.5 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a90d0b92-c2d2-44bb-aa33-f84c7ae5603a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "75aedc7d-0f6e-45e1-93af-a6ae60ddd3d2")
 		(at 109.07 71.84 -90)
 		(property "Reference" "BOM17"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "472da8bd-003a-455a-a5cf-377a64e18401")
@@ -5741,25 +5479,13 @@
 			)
 		)
 		(property "Value" "M3 6mm SS screw"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "1f79d536-9df7-4852-98b1-aee70871dd5e")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ff3fe062-4ef8-4970-9d61-b5cc770900d5")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5789,7 +5515,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/185035090471"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5802,7 +5528,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5815,7 +5541,7 @@
 			)
 		)
 		(property "Part Number" "M3 6mm SS screw"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5828,7 +5554,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "500"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5841,7 +5567,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=15.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5854,7 +5580,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5867,7 +5593,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5883,7 +5609,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "62b338ec-e0e4-413b-86cb-028ca41e6723")
@@ -5894,13 +5620,14 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:Conn_B2B-RA_2.54mm_9pin_LtoR"
 		(layer "F.Cu")
 		(uuid "7822409f-4fc9-4893-bfd1-abfb7162cbae")
 		(at 90.17 78.74 -90)
 		(property "Reference" "J2"
-			(at 0 -3.81 -90)
+			(at 0 -3.81 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -5913,7 +5640,7 @@
 			)
 		)
 		(property "Value" "Radio Board"
-			(at 0 -10.795 -90)
+			(at 0 -10.795 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "7a45ebe5-4814-4e20-8e7d-1ababa3250c0")
@@ -5924,21 +5651,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Libraries:Conn_B2B-RA_2.54mm_9pin_LtoR"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f8fafa89-72a8-434b-9635-f4e24cb28085")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5951,7 +5665,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6069,7 +5783,7 @@
 			(uuid "8e56dc39-f064-413e-b5bf-9fd8e7538271")
 		)
 		(fp_text user "Board Surface"
-			(at 13.335 0 -90)
+			(at 13.335 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "4205a950-fc08-4078-b6db-fdf14138fd76")
@@ -6082,7 +5796,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -9.525 -90)
+			(at 0 -9.525 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "aba54126-0c3b-43dc-b66b-0ed80fe9ec6e")
@@ -6094,7 +5808,7 @@
 			)
 		)
 		(fp_text user "1.6mm"
-			(at 13.335 1.6 -90)
+			(at 13.335 1.6 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "b177bfbc-9f61-41af-a105-0ac7b37da1a7")
@@ -6109,7 +5823,7 @@
 		(pad "1" smd rect
 			(at -10.16 -1.143 270)
 			(size 1.524 2.794)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 17 "Radio +V")
 			(pinfunction "Pin_1")
 			(pintype "passive")
@@ -6118,7 +5832,7 @@
 		(pad "2" smd rect
 			(at -7.62 -1.143 270)
 			(size 1.524 2.794)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 15 "Radio Power Gnd")
 			(pinfunction "Pin_2")
 			(pintype "passive")
@@ -6127,7 +5841,7 @@
 		(pad "3" smd rect
 			(at -5.08 -1.143 270)
 			(size 1.524 2.794)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "~{Radio PTT}")
 			(pinfunction "Pin_3")
 			(pintype "passive")
@@ -6136,7 +5850,7 @@
 		(pad "4" smd rect
 			(at -2.54 -1.143 270)
 			(size 1.524 2.794)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 3 "Radio Mic Gnd")
 			(pinfunction "Pin_4")
 			(pintype "passive")
@@ -6145,7 +5859,7 @@
 		(pad "5" smd rect
 			(at 0 -1.143 270)
 			(size 1.524 2.794)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 16 "Radio Mic+")
 			(pinfunction "Pin_5")
 			(pintype "passive")
@@ -6154,7 +5868,7 @@
 		(pad "6" smd rect
 			(at 2.54 -1.143 270)
 			(size 1.524 2.794)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 5 "Radio HP Left")
 			(pinfunction "Pin_6")
 			(pintype "passive")
@@ -6163,7 +5877,7 @@
 		(pad "7" smd rect
 			(at 5.08 -1.143 270)
 			(size 1.524 2.794)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "Radio HP Right")
 			(pinfunction "Pin_7")
 			(pintype "passive")
@@ -6172,7 +5886,7 @@
 		(pad "8" smd rect
 			(at 7.62 -1.143 270)
 			(size 1.524 2.794)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 14 "Radio HP Gnd")
 			(pinfunction "Pin_8")
 			(pintype "passive")
@@ -6181,12 +5895,13 @@
 		(pad "9" smd rect
 			(at 10.16 -1.143 270)
 			(size 1.524 2.794)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 11 "Shield")
 			(pinfunction "Pin_9")
 			(pintype "passive")
 			(uuid "a967e4a2-d39a-4cef-bef8-1de32d6efcb4")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
 		(layer "F.Cu")
@@ -6216,21 +5931,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "79260389-4d2b-4cda-9df4-a712236a3c15")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6243,7 +5945,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6256,7 +5958,7 @@
 			)
 		)
 		(property "Link" "https://www.mouser.com/ProductDetail/TDK/FG28X5R1E106MRT06?qs=sGAEpiMZZMvsSlwiRhF8qu1N8m6Tr3soRv%2F6PLISIe9OIxN7vyCrdA%3D%3D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6269,7 +5971,7 @@
 			)
 		)
 		(property "Manufacturer" "TDK"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6282,7 +5984,7 @@
 			)
 		)
 		(property "Part Number" "FG28X5R1E106MRT06 "
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6295,7 +5997,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "200"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6308,7 +6010,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=32.40"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6496,6 +6198,7 @@
 			(pintype "passive")
 			(uuid "afcd6388-daf3-4a6b-9a2c-184fe7a0bd77")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.7mm_W2.5mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6513,7 +6216,7 @@
 		(uuid "96b976fd-df28-403d-9aa9-e2571f95821c")
 		(at 106.07 65.84 -90)
 		(property "Reference" "BOM3"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "c2ce8de8-f5b3-43a3-bcd4-de7129df4bbd")
@@ -6525,25 +6228,13 @@
 			)
 		)
 		(property "Value" "M3 14mm brass standoff"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "a104d3fc-ae5f-4d13-9761-d8368a5ca274")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e6eadef9-8cc1-4900-9d21-80ee17d8fcd7")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6573,7 +6264,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/201415009549"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6586,7 +6277,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6599,7 +6290,7 @@
 			)
 		)
 		(property "Part Number" "M3 14mm brass standoff"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6612,7 +6303,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "400"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6625,7 +6316,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=49.52+1.95"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6638,7 +6329,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6651,7 +6342,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6667,7 +6358,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "89682624-122a-4ac7-884c-43f548afb178")
@@ -6678,13 +6369,14 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "9b080899-4f71-40b7-a41c-cbfa4a46bdf9")
 		(at 107.57 73.34 -90)
 		(property "Reference" "BOM22"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "c7495978-6e01-46e6-947a-8b7e9c22708e")
@@ -6696,25 +6388,13 @@
 			)
 		)
 		(property "Value" ".1\" Jumper"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "50e7344f-fd68-4188-b46c-679d8ec8e919")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "dbabd800-edf7-49b8-85c0-8029ead92178")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6744,7 +6424,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/180973205082"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6757,7 +6437,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6770,7 +6450,7 @@
 			)
 		)
 		(property "Part Number" ".1\" Pin Jumper"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6783,7 +6463,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "400"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6796,7 +6476,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "7.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6809,7 +6489,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6822,7 +6502,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6838,7 +6518,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "012906ae-c8d5-4317-93c1-a443de95eea0")
@@ -6849,13 +6529,14 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "9d6d5ef8-ced3-4cdc-bb4f-612791b26ea0")
 		(at 109.07 67.34 -90)
 		(property "Reference" "BOM5"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "5565cea4-372e-4299-98dd-4086fa7cd9ee")
@@ -6867,25 +6548,13 @@
 			)
 		)
 		(property "Value" "Bottom Board"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "a4c347e5-606d-43dc-9e0c-764e88e50469")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "207dc65b-3afc-4e62-af3d-6ecab0c1adc7")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6915,7 +6584,7 @@
 			)
 		)
 		(property "Link" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6928,7 +6597,7 @@
 			)
 		)
 		(property "Manufacturer" "Board Fab"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6941,7 +6610,7 @@
 			)
 		)
 		(property "Part Number" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6954,7 +6623,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "100"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6967,7 +6636,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=36.62+20"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6980,7 +6649,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6993,7 +6662,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7009,7 +6678,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "1609b27c-3e29-4faa-93d2-59506b05a7f0")
@@ -7020,13 +6689,14 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "a5a987f6-e929-4eb8-94e7-c71632602593")
 		(at 109.07 65.84 -90)
 		(property "Reference" "BOM1"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "c2c43d76-8a89-4282-9204-f74101d4de50")
@@ -7038,25 +6708,13 @@
 			)
 		)
 		(property "Value" "M3 6mm SS screw"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "96edb25b-0883-42c2-a6b1-fd269217aeb2")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cb0a8a97-913f-4685-97cc-67456d0a677a")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7086,7 +6744,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/185035090471"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7099,7 +6757,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7112,7 +6770,7 @@
 			)
 		)
 		(property "Part Number" "M3 6mm SS screw"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7125,7 +6783,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "500"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7138,7 +6796,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=15.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7151,7 +6809,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7164,7 +6822,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7180,7 +6838,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "9e4a3221-8dc9-4fe0-a820-a737d017a05b")
@@ -7191,6 +6849,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_1206_3216Metric"
 		(layer "F.Cu")
@@ -7221,21 +6880,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "eb935c47-38aa-40c0-a40e-818ee90adf86")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7248,7 +6894,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7379,7 +7025,7 @@
 		(pad "1" smd roundrect
 			(at -1.4625 0 270)
 			(size 1.125 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.222222)
 			(net 17 "Radio +V")
 			(pintype "passive")
@@ -7388,12 +7034,13 @@
 		(pad "2" smd roundrect
 			(at 1.4625 0 270)
 			(size 1.125 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.222222)
 			(net 1 "Net-(J1-Pad10)")
 			(pintype "passive")
 			(uuid "528b7e2a-df81-4100-b648-9560d0dd0bc7")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7411,7 +7058,7 @@
 		(uuid "ab35ba6f-740c-4ae9-a1ec-7ef47a8fe8ef")
 		(at 107.57 65.84 -90)
 		(property "Reference" "BOM2"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "643e2d85-6369-463d-ad77-26865437d4d8")
@@ -7423,25 +7070,13 @@
 			)
 		)
 		(property "Value" "Top Board"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "4907a90d-f569-4d1d-a220-c665780f2e4d")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "28a70a87-0d36-470f-be76-61e6d34f1984")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7471,7 +7106,7 @@
 			)
 		)
 		(property "Link" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7484,7 +7119,7 @@
 			)
 		)
 		(property "Manufacturer" "Board Fab"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7497,7 +7132,7 @@
 			)
 		)
 		(property "Part Number" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7510,7 +7145,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "100"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7523,7 +7158,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=36.62+20"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7536,7 +7171,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7549,7 +7184,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7565,7 +7200,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "7f55c9bb-1669-443c-9b8e-812f2f382bcd")
@@ -7576,6 +7211,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_1206_3216Metric"
 		(layer "F.Cu")
@@ -7586,6 +7222,7 @@
 		(property "Reference" "R7"
 			(at -5.461 0 180)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "170058f4-dcb2-48d9-8e08-37c4dc86738d")
 			(effects
 				(font
@@ -7605,21 +7242,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "166e0c76-8768-42ca-b1b3-2ad6c831c519")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7632,7 +7256,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7645,7 +7269,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7776,7 +7400,7 @@
 		(pad "1" smd roundrect
 			(at -1.4625 0 270)
 			(size 1.125 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.222222)
 			(net 7 "HP Right")
 			(pintype "passive")
@@ -7785,12 +7409,13 @@
 		(pad "2" smd roundrect
 			(at 1.4625 0 270)
 			(size 1.125 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.222222)
 			(net 20 "Net-(J6-Pin_4)")
 			(pintype "passive")
 			(uuid "db087070-72f6-4140-af8f-6e7a060b58d4")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7831,21 +7456,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b5c5cf22-b5cb-4a1b-8a08-4ed36cbb59f9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7858,7 +7470,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7871,7 +7483,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/181918596973"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7884,7 +7496,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7897,7 +7509,7 @@
 			)
 		)
 		(property "Part Number" ".1\" 3x40 right angle 2.54mm Pin Header"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7910,7 +7522,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "40"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7923,7 +7535,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "2.49"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7936,7 +7548,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7949,7 +7561,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8501,6 +8113,7 @@
 			(pintype "passive")
 			(uuid "7818d304-5fde-4124-be71-5994411d3c72")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x02_P2.54mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8542,21 +8155,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "530a041f-97d5-4fcd-9839-a91491d3875d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8569,7 +8169,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8700,7 +8300,7 @@
 		(pad "1" smd roundrect
 			(at -1.4625 0 270)
 			(size 1.125 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.222222)
 			(net 17 "Radio +V")
 			(pintype "passive")
@@ -8709,12 +8309,13 @@
 		(pad "2" smd roundrect
 			(at 1.4625 0 270)
 			(size 1.125 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.222222)
 			(net 18 "Net-(J3-Pin_1)")
 			(pintype "passive")
 			(uuid "3c3a3266-0be5-4a52-8da0-f52998d9ad76")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8732,7 +8333,7 @@
 		(uuid "b14d8c6a-1fed-4306-bed7-294ec8ecb1c2")
 		(at 104.57 65.84 -90)
 		(property "Reference" "BOM4"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "c79afef4-0174-42c2-b6b3-f5b186fe5489")
@@ -8744,25 +8345,13 @@
 			)
 		)
 		(property "Value" "Main Board"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "f6ead1f9-ce5a-4fc6-b7de-79ab517c3bed")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "49872fe7-868b-4cf2-b3d1-141cff201b4d")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -8792,7 +8381,7 @@
 			)
 		)
 		(property "Link" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8805,7 +8394,7 @@
 			)
 		)
 		(property "Manufacturer" "Board Fab"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8818,7 +8407,7 @@
 			)
 		)
 		(property "Part Number" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8831,7 +8420,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "100"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8844,7 +8433,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=36.62+20"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8857,7 +8446,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8870,7 +8459,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8886,7 +8475,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "d06b571d-a9d5-447b-8341-a0c923504f17")
@@ -8897,6 +8486,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_1206_3216Metric"
 		(layer "F.Cu")
@@ -8905,8 +8495,9 @@
 		(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R5"
-			(at -5.461 -0.127 180)
+			(at -5.461 -0.127 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "01a640a3-6802-448e-8038-704d506a2b56")
 			(effects
 				(font
@@ -8926,21 +8517,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7e30b8f1-833a-429f-a054-9cb50e252710")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8953,7 +8531,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8966,7 +8544,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9097,7 +8675,7 @@
 		(pad "1" smd roundrect
 			(at -1.4625 0 270)
 			(size 1.125 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.222222)
 			(net 6 "HP Left")
 			(pintype "passive")
@@ -9106,12 +8684,13 @@
 		(pad "2" smd roundrect
 			(at 1.4625 0 270)
 			(size 1.125 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.222222)
 			(net 5 "Radio HP Left")
 			(pintype "passive")
 			(uuid "e51f8cb4-9606-45b2-b74d-57da6b4501e5")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9131,9 +8710,8 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R8"
-			(at 3.81 -2.37 -90)
+			(at 9.271 0 0)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "da15c754-a824-425f-b89f-f7de2980df8c")
 			(effects
 				(font
@@ -9143,25 +8721,12 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 3.81 2.37 -90)
+			(at 3.81 2.37 270)
 			(layer "F.Fab")
 			(uuid "10617901-8212-47a4-b257-ddabed8e8419")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "957b0176-3dc7-4525-8672-2f743de150ce")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9449,7 +9014,7 @@
 			(uuid "b8de6ada-9249-45ab-826c-e5fffd916c02")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3.81 0 -90)
+			(at 3.81 0 270)
 			(layer "F.Fab")
 			(uuid "f21d9961-1b46-4ac2-aa01-ea1104e1efa5")
 			(effects
@@ -9479,6 +9044,7 @@
 			(pintype "passive")
 			(uuid "0fd5a915-cf4c-466b-99fd-c4d2d468f63f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9496,7 +9062,7 @@
 		(uuid "cfad9db9-37cf-48d2-a534-1b8c5c778df2")
 		(at 104.57 71.84 -90)
 		(property "Reference" "BOM20"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "67cafe30-2859-44c5-9158-e53cca4a9a5e")
@@ -9508,25 +9074,13 @@
 			)
 		)
 		(property "Value" ".1\" Jumper"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "447f1575-5f57-4d99-8f4a-f19359b33c13")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "75b2b1c1-907a-4d4c-a69e-697b1c6dee90")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9556,7 +9110,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/180973205082"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9569,7 +9123,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9582,7 +9136,7 @@
 			)
 		)
 		(property "Part Number" ".1\" Pin Jumper"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9595,7 +9149,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "400"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9608,7 +9162,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "7.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9621,7 +9175,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9634,7 +9188,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9650,7 +9204,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "79bd74ad-4c94-44c5-b410-a830cca8449e")
@@ -9661,13 +9215,14 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "d897a9e2-5fa1-483b-9626-6f2bade06f81")
 		(at 104.57 73.34 -90)
 		(property "Reference" "BOM24"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "e22ae083-f115-4df8-be35-21a94eda9b9b")
@@ -9679,25 +9234,13 @@
 			)
 		)
 		(property "Value" ".1\" Jumper"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "6f1802ec-f96c-4216-a3ca-ac41ad7531d1")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2204dc98-df9d-4bd6-ad5f-fc610144173f")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9727,7 +9270,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/180973205082"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9740,7 +9283,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9753,7 +9296,7 @@
 			)
 		)
 		(property "Part Number" ".1\" Pin Jumper"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9766,7 +9309,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "400"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9779,7 +9322,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "7.96"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9792,7 +9335,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9805,7 +9348,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9821,7 +9364,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "d3148574-5967-4602-91a2-3d17375c4a34")
@@ -9832,6 +9375,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Connector_RJ:RJ45_Amphenol_RJHSE538X"
 		(layer "F.Cu")
@@ -9862,21 +9406,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_RJ:RJ45_Amphenol_RJHSE538X"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4dc9282b-ce8f-4b28-9fcc-6b59d1c10b7c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9889,7 +9420,7 @@
 			)
 		)
 		(property "Description" "RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9902,7 +9433,7 @@
 			)
 		)
 		(property "Link" "https://www.mouser.com/ProductDetail/523-RJHSE-5380"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9915,7 +9446,7 @@
 			)
 		)
 		(property "Manufacturer" "Amphenol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9928,7 +9459,7 @@
 			)
 		)
 		(property "Part Number" "RJHSE-5381"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9941,7 +9472,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "120"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9954,7 +9485,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=127.20"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9967,7 +9498,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9980,7 +9511,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10350,6 +9881,7 @@
 			(pintype "passive")
 			(uuid "916f6343-9178-46c2-8346-e347e282c88b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ45_Amphenol_RJHSE538X.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10391,21 +9923,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0ec32f1c-344f-49e4-8892-c846e36f245e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10418,7 +9937,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10549,7 +10068,7 @@
 		(pad "1" smd roundrect
 			(at -1.475 0 270)
 			(size 1.15 1.8)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net 8 "Net-(C1-Pad1)")
 			(pintype "passive")
@@ -10558,12 +10077,13 @@
 		(pad "2" smd roundrect
 			(at 1.475 0 270)
 			(size 1.15 1.8)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net 18 "Net-(J3-Pin_1)")
 			(pintype "passive")
 			(uuid "75d56c9d-780d-4a62-8163-41ee27b29c42")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10601,19 +10121,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "80570bbd-8c1e-43f4-840f-9e7cdcd41131")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -10657,7 +10164,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "9f981d6f-fe98-416f-90f2-a66a69431b04")
 		)
@@ -10668,7 +10175,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "5ca468c7-cda4-4138-bc1f-3a2fe932d70d")
 		)
@@ -10694,6 +10201,7 @@
 			(pintype "input")
 			(uuid "1629637f-4e5d-4bc2-8a17-d30444ca5db2")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad"
 		(layer "F.Cu")
@@ -10720,19 +10228,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "172029bb-b1ac-46f5-8427-90243bf9573f")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -10776,7 +10271,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "efab6ac3-59d3-4de3-be38-db0e7f16ce28")
 		)
@@ -10787,7 +10282,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "06690b02-1747-449a-9be9-c864e21dfc05")
 		)
@@ -10813,13 +10308,14 @@
 			(pintype "input")
 			(uuid "9be48c52-d759-40df-be89-2caa1e78e538")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "f250c8a4-9e5f-4fb5-a0d5-19dcdd3a9c04")
 		(at 107.57 71.84 -90)
 		(property "Reference" "BOM18"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "d9164a6c-725e-471a-bd1a-114a87ac4df7")
@@ -10831,25 +10327,13 @@
 			)
 		)
 		(property "Value" "M3 14mm brass standoff"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "bfb1a077-badd-4dea-a847-9203dd28b623")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "62a5c815-79f0-4a11-a917-9726d27049b3")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -10879,7 +10363,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/201415009549"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10892,7 +10376,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10905,7 +10389,7 @@
 			)
 		)
 		(property "Part Number" "M3 14mm brass standoff"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10918,7 +10402,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "400"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10931,7 +10415,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "=49.52+1.95"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10944,7 +10428,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10957,7 +10441,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10973,7 +10457,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "127640f1-d4d3-4b63-9e78-3434eb6fe5df")
@@ -10984,6 +10468,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "OHIS:Logo_OHIS_Medium"
 		(layer "F.Cu")
@@ -11011,19 +10496,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "OHIS:Logo_OHIS_Medium"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "778b0e15-bec3-463e-8364-72c43649d77c")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -11095,7 +10567,7 @@
 				(width 0.3)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "94e8782e-786f-4174-b383-380d0d3a6864")
 		)
@@ -11106,7 +10578,7 @@
 				(width 0.3)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "c64c2001-eeac-4d80-b55e-ae3a7ebacc8d")
 		)
@@ -11117,7 +10589,7 @@
 				(width 0.3)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "b4304ba2-6fe3-49d7-886f-75a85a25c8a4")
 		)
@@ -11166,26 +10638,14 @@
 				)
 			)
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 2.5 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f96c97c1-2948-46fd-a0d4-3b18de0f328a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
+		(embedded_fonts no)
 	)
 	(footprint "Libraries:BOM_Item"
 		(layer "F.Cu")
 		(uuid "f5a7e6e5-c53a-45f1-b04b-832d614499b6")
 		(at 106.07 68.84 -90)
 		(property "Reference" "BOM11"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "a326f1fd-c09c-4538-9d0b-5501479b9a0b")
@@ -11197,25 +10657,13 @@
 			)
 		)
 		(property "Value" "M3 3mm ABS standoff"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "9dc1ec1c-ed24-4c69-8942-b58014471833")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Libraries:BOM_Item"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0f33fa77-b6e8-4290-b934-31f83eb60920")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -11245,7 +10693,7 @@
 			)
 		)
 		(property "Link" "https://www.ebay.com/itm/201415009549"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11258,7 +10706,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11271,7 +10719,7 @@
 			)
 		)
 		(property "Part Number" "M3 3mm ABS standoff"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11284,7 +10732,7 @@
 			)
 		)
 		(property "Z0 Buy in Qty" "1000"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11297,7 +10745,7 @@
 			)
 		)
 		(property "Z1 Cost to buy" "12.76"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11310,7 +10758,7 @@
 			)
 		)
 		(property "Z2 Cost per part" "=IFERROR(OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)/OFFSET(INDIRECT(CELL(\"Address\")), 0, -2), 0)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11323,7 +10771,7 @@
 			)
 		)
 		(property "Z3 Cost per Qty" "=OFFSET(INDIRECT(CELL(\"Address\")), 0, -1)*INDIRECT(ADDRESS(CELL(\"Row\"), 2))"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11339,7 +10787,7 @@
 		(sheetname "Root")
 		(sheetfile "BaseBoard.kicad_sch")
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "16f493bf-fa7f-4e2e-be56-2814203b55f7")
@@ -11350,6 +10798,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad"
 		(layer "F.Cu")
@@ -11376,19 +10825,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b48c3364-1f4e-4173-9bea-c137d390db6d")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -11432,7 +10868,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "2a189a76-50ae-4b22-9ce2-6ffeabd02f82")
 		)
@@ -11443,7 +10879,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "25066630-c328-4d18-a7e4-12d8bdbbdcb2")
 		)
@@ -11469,6 +10905,7 @@
 			(pintype "input")
 			(uuid "f2c76b6f-5ae7-46dc-927d-5606e99c2d5b")
 		)
+		(embedded_fonts no)
 	)
 	(gr_rect
 		(start 123.19 91.44)
@@ -11477,7 +10914,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "04a9146f-d127-421d-92b6-dd1f6c92ed00")
 	)
@@ -11488,7 +10925,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "0b4f55e2-f382-4818-8f82-f4758336835a")
 	)
@@ -11499,7 +10936,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "23ed5372-1070-4b39-8938-c8c09244da79")
 	)
@@ -11510,7 +10947,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "617dbbf6-4d00-495b-8c59-27f3cd685eb2")
 	)
@@ -11521,7 +10958,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "6b61d1d3-7891-464c-82e5-b22b6e568766")
 	)
@@ -11532,7 +10969,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "768e3158-d86d-4e29-b310-ed46e3050b19")
 	)
@@ -11543,7 +10980,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "8ca78574-caf8-4746-88d7-962b75c25f56")
 	)
@@ -11554,7 +10991,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "a4af19e2-8a27-40c5-a6eb-08ee2d1dd342")
 	)
@@ -11565,7 +11002,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "da6c5008-3ae1-420a-b072-c8b031902c52")
 	)
@@ -11576,7 +11013,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "dba24594-9d34-41f0-899c-f1f55cdbfd40")
 	)
@@ -11587,7 +11024,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "dc2f12df-576f-416e-8ee3-3244b32fe4a7")
 	)
@@ -11598,7 +11035,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "e66161ce-5b81-4eba-8f77-382ba1a686c2")
 	)
@@ -11745,21 +11182,9 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "701f0158-bbb7-4df2-8a87-33db74cd0c2e")
-	)
-	(gr_text "OHIS Radio Adapter v1.0b\n2024 CC-BY OHIS-WG ohis.org"
-		(at 128.778 92.964 0)
-		(layer "B.SilkS")
-		(uuid "3df93697-f49b-4086-8d97-5f770b88b87e")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.2032)
-			)
-			(justify left bottom mirror)
-		)
 	)
 	(gr_text "JLCJLCJLCJLC"
 		(at 123.571 75.692 0)
@@ -11891,6 +11316,54 @@
 			)
 		)
 	)
+	(gr_text "OHIS Radio Adapter v1.0b\n2024 CC-BY OHIS-WG ohis.org"
+		(at 128.778 92.964 0)
+		(layer "B.SilkS")
+		(uuid "3df93697-f49b-4086-8d97-5f770b88b87e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.2032)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Fab")
+		(uuid "1303e77d-0782-4c4f-b604-707efbf012c7")
+		(pts
+			(xy 82.55 67.31) (xy 133.35 67.31)
+		)
+		(height -12.065)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "2.0000 in"
+			(at 107.95 54.095 0)
+			(layer "F.Fab")
+			(uuid "1303e77d-0782-4c4f-b604-707efbf012c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+	)
 	(dimension
 		(type aligned)
 		(layer "F.Fab")
@@ -11899,6 +11372,22 @@
 			(xy 82.55 71.755) (xy 82.55 85.725)
 		)
 		(height 0.635)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
 		(gr_text "0.5500 in"
 			(at 80.765 78.74 90)
 			(layer "F.Fab")
@@ -11910,6 +11399,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Fab")
+		(uuid "533264e8-d293-43d5-9c93-729a69125e84")
+		(pts
+			(xy 82.55 71.755) (xy 82.55 63.5)
+		)
+		(height -10.795)
 		(format
 			(prefix "")
 			(suffix "")
@@ -11921,17 +11419,11 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "F.Fab")
-		(uuid "533264e8-d293-43d5-9c93-729a69125e84")
-		(pts
-			(xy 82.55 71.755) (xy 82.55 63.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -10.795)
 		(gr_text "0.3250 in"
 			(at 70.605 67.6275 90)
 			(layer "F.Fab")
@@ -11943,6 +11435,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Fab")
+		(uuid "5b41a3cd-9b46-435f-b0ee-efcf99d870e7")
+		(pts
+			(xy 82.55 67.31) (xy 90.17 67.31)
+		)
+		(height -8.89)
 		(format
 			(prefix "")
 			(suffix "")
@@ -11954,17 +11455,11 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "F.Fab")
-		(uuid "5b41a3cd-9b46-435f-b0ee-efcf99d870e7")
-		(pts
-			(xy 82.55 67.31) (xy 90.17 67.31)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -8.89)
 		(gr_text "0.3000 in"
 			(at 86.36 57.27 0)
 			(layer "F.Fab")
@@ -11976,6 +11471,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Fab")
+		(uuid "7b7fcffa-eec3-47af-a14b-ea28780ebcf6")
+		(pts
+			(xy 82.55 67.31) (xy 152.4 67.31)
+		)
+		(height -14.605)
 		(format
 			(prefix "")
 			(suffix "")
@@ -11987,8 +11491,22 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "2.7500 in"
+			(at 117.475 51.555 0)
+			(layer "F.Fab")
+			(uuid "7b7fcffa-eec3-47af-a14b-ea28780ebcf6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 	)
 	(dimension
 		(type aligned)
@@ -11998,6 +11516,22 @@
 			(xy 82.55 67.31) (xy 87.63 67.31)
 		)
 		(height -5.715)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
 		(gr_text "0.2000 in"
 			(at 85.09 60.445 0)
 			(layer "F.Fab")
@@ -12009,6 +11543,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Fab")
+		(uuid "9b5785d1-ecb2-4395-b80a-83fee91070b2")
+		(pts
+			(xy 82.55 67.31) (xy 82.55 90.17)
+		)
+		(height 9.525)
 		(format
 			(prefix "")
 			(suffix "")
@@ -12020,17 +11563,11 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "F.Fab")
-		(uuid "9b5785d1-ecb2-4395-b80a-83fee91070b2")
-		(pts
-			(xy 82.55 67.31) (xy 82.55 90.17)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 9.525)
 		(gr_text "0.9000 in"
 			(at 71.875 78.74 90)
 			(layer "F.Fab")
@@ -12042,6 +11579,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Fab")
+		(uuid "b8fdd26a-54ee-460f-92a6-22bd3348c0ac")
+		(pts
+			(xy 82.55 67.31) (xy 78.105 67.31)
+		)
+		(height 12.065)
 		(format
 			(prefix "")
 			(suffix "")
@@ -12053,17 +11599,11 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "F.Fab")
-		(uuid "b8fdd26a-54ee-460f-92a6-22bd3348c0ac")
-		(pts
-			(xy 82.55 67.31) (xy 78.105 67.31)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 12.065)
 		(gr_text "0.1750 in"
 			(at 80.3275 54.095 0)
 			(layer "F.Fab")
@@ -12075,6 +11615,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Fab")
+		(uuid "e4736667-9ff7-4667-b62b-3a4b0cf0f2c0")
+		(pts
+			(xy 81.915 63.5) (xy 81.915 93.98)
+		)
+		(height 12.7)
 		(format
 			(prefix "")
 			(suffix "")
@@ -12086,17 +11635,11 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "F.Fab")
-		(uuid "e4736667-9ff7-4667-b62b-3a4b0cf0f2c0")
-		(pts
-			(xy 81.915 63.5) (xy 81.915 93.98)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 12.7)
 		(gr_text "1.2000 in"
 			(at 68.065 78.74 90)
 			(layer "F.Fab")
@@ -12108,19 +11651,6 @@
 				)
 			)
 		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-		)
-		(style
-			(thickness 0.1)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
 	)
 	(segment
 		(start 108.585 74.4875)
@@ -15027,7 +14557,7 @@
 	(zone
 		(net 11)
 		(net_name "Shield")
-		(layers "F&B.Cu")
+		(layers "F.Cu" "B.Cu")
 		(uuid "2e893661-9922-48f1-8d8e-bf2c322a1e9b")
 		(hatch edge 0.5)
 		(connect_pads
@@ -16526,6 +16056,10 @@
 			(copperpour not_allowed)
 			(footprints allowed)
 		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
@@ -16537,8 +16071,8 @@
 		)
 	)
 	(group ""
-		(uuid "151013c9-2ccd-48a5-9249-a8269da65690")
-		(members "1e8a998d-4188-4e6a-954f-55455d1353d2" "baf74b66-682d-4f84-8b6c-62b9ef2ab27e")
+		(uuid "1bc512c7-349a-42a2-9e56-fc703f6f5f8c")
+		(members "ac9ab8ba-8103-49f1-aa2b-d45de021a549" "c1e5fa9e-ca70-4d41-8521-33a18054b19e")
 	)
 	(group ""
 		(uuid "2f8ef884-e547-4a37-8658-928d9a566abd")
@@ -16553,11 +16087,8 @@
 		(members "4e755f60-11cf-44ea-87a0-568380bbf22f" "a9ddea27-4882-4b13-ad2d-0a7de44a245b")
 	)
 	(group ""
-		(uuid "bb66d10d-b561-495c-afaa-6082be0226e8")
-		(members "ac9ab8ba-8103-49f1-aa2b-d45de021a549" "c1e5fa9e-ca70-4d41-8521-33a18054b19e")
-	)
-	(group ""
 		(uuid "deb75233-326f-4613-a9cc-1ef638296b24")
 		(members "1292e8fe-e1e2-404d-8211-9669f835a344" "6e270e6a-953f-4ce3-9f4e-5a7d2a8aac47")
 	)
+	(embedded_fonts no)
 )
