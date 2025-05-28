@@ -10139,7 +10139,7 @@
 		(descr "Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "fuse")
 		(property "Reference" "F1"
-			(at -0.635 74.37 0)
+			(at 0 1.905 0)
 			(layer "F.SilkS")
 			(uuid "639d849a-9b8a-4957-9147-7d1459af780d")
 			(effects
@@ -33811,6 +33811,7 @@
 				(layer "B.Cu"
 					(shape rect)
 					(size 1.524 2.794)
+					(thermal_bridge_angle 45)
 					(zone_connect -1)
 				)
 			)
@@ -33839,6 +33840,7 @@
 				(layer "B.Cu"
 					(shape rect)
 					(size 1.524 2.794)
+					(thermal_bridge_angle 45)
 					(zone_connect -1)
 				)
 			)
@@ -33867,6 +33869,7 @@
 				(layer "B.Cu"
 					(shape rect)
 					(size 1.524 2.794)
+					(thermal_bridge_angle 45)
 					(zone_connect -1)
 				)
 			)
@@ -33895,6 +33898,7 @@
 				(layer "B.Cu"
 					(shape rect)
 					(size 1.524 2.794)
+					(thermal_bridge_angle 45)
 					(zone_connect -1)
 				)
 			)
@@ -33911,7 +33915,7 @@
 			(pinfunction "Pin_4")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "8811dd57-b1ba-4d73-ad76-9446a0123038")
+			(uuid "ebdfe504-0b50-4721-a019-4e7de94d0e75")
 			(padstack
 				(mode front_inner_back)
 				(layer "Inner"
@@ -33923,6 +33927,7 @@
 				(layer "B.Cu"
 					(shape rect)
 					(size 1.524 2.794)
+					(thermal_bridge_angle 45)
 					(zone_connect -1)
 				)
 			)
@@ -33951,6 +33956,7 @@
 				(layer "B.Cu"
 					(shape rect)
 					(size 1.524 2.794)
+					(thermal_bridge_angle 45)
 					(zone_connect -1)
 				)
 			)
@@ -33967,7 +33973,7 @@
 			(pinfunction "Pin_5")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "25efb7af-2f04-4737-b36a-59e3a9164ada")
+			(uuid "b85d942e-b36a-49bd-b8da-2374631886b6")
 			(padstack
 				(mode front_inner_back)
 				(layer "Inner"
@@ -33979,6 +33985,7 @@
 				(layer "B.Cu"
 					(shape rect)
 					(size 1.524 2.794)
+					(thermal_bridge_angle 45)
 					(zone_connect -1)
 				)
 			)
@@ -34007,6 +34014,7 @@
 				(layer "B.Cu"
 					(shape rect)
 					(size 1.524 2.794)
+					(thermal_bridge_angle 45)
 					(zone_connect -1)
 				)
 			)
@@ -34023,7 +34031,7 @@
 			(pinfunction "Pin_6")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "bea16d89-7e6f-47f3-b076-3f109234463e")
+			(uuid "922c362e-72d3-4822-ac19-fd12f7c708f2")
 			(padstack
 				(mode front_inner_back)
 				(layer "Inner"
@@ -34035,6 +34043,7 @@
 				(layer "B.Cu"
 					(shape rect)
 					(size 1.524 2.794)
+					(thermal_bridge_angle 45)
 					(zone_connect -1)
 				)
 			)
@@ -34063,6 +34072,7 @@
 				(layer "B.Cu"
 					(shape rect)
 					(size 1.524 2.794)
+					(thermal_bridge_angle 45)
 					(zone_connect -1)
 				)
 			)
@@ -34091,6 +34101,7 @@
 				(layer "B.Cu"
 					(shape rect)
 					(size 1.524 2.794)
+					(thermal_bridge_angle 45)
 					(zone_connect -1)
 				)
 			)
@@ -34119,6 +34130,7 @@
 				(layer "B.Cu"
 					(shape rect)
 					(size 1.524 2.794)
+					(thermal_bridge_angle 45)
 					(zone_connect -1)
 				)
 			)
